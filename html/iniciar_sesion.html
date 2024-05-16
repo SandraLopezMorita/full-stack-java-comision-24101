@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ESTRUCTURA BÁSICA -->
+
+<!-- 1) head -->
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <!-- aqui deben estar los llamados a archivos .css-->
+     <link rel="stylesheet" href="../css/index.css">
+     <!--  Llamar a marco bootstrap, para barra de navegación responsive -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+     <!-- Código https://fontawesome.com para iconos de redes sociales en el footer -->
+     <script src="https://kit.fontawesome.com/2ebc501450.js" crossorigin="anonymous"></script>
+     <!-- desde aqui se deben importar las fuente google font -->
+     <!-- fuente google font 1 -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap"
+          rel="stylesheet">
+     <!-- fuente google font 2 -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Titan+One&display=swap"
+          rel="stylesheet">
+
+
+
+
+</head>
+
+
+<!-- 2) body | contiene al header, main, section-->
+
+<body>
+
+     <header>
+          <!-- ********************************************************************** -->
+          <!-- 3) nav |  -->
+
+          <!--  (opcional)INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN (opcional) -->
+          <nav class="navbar navbar-inverse">
+               <div class="container-fluid">
+                    <div class="navbar-header">
+                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                         </button>
+                         <div class="nav-marca-logo">
+                              <span class="titan-one-regular span-hover span-1">N</span>
+                              <span class="titan-one-regular span-hover span-2">Ú</span>
+                              <span class="titan-one-regular span-hover span-3">M</span>
+                              <span class="titan-one-regular span-hover span-4">E</span>
+                              <span class="titan-one-regular span-hover span-5">R</span>
+                              <span class="titan-one-regular span-hover span-6">O</span>
+                              <span class="titan-one-regular span-hover span-7">S</span>
+                         </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                         <ul class="nav navbar-nav">
+                              <li><a href="../index.html" class="boton">Home</a></li>
+                              <li><a href="#" class="boton">Secciones</a></li>
+                              <li><a href="#" class="boton">Buscador</a></li>
+                              <li><a href="#" class="boton">Contacto</a></li>
+                              <li class="iniciar-sesion" class="boton"><a href="./iniciar_sesion.html">Iniciar
+                                        Sesion</a></li>
+                         </ul>
+
+                    </div>
+               </div>
+          </nav>
+          <!--  FIN CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  -->
+          <!-- ********************************************************************** -->
+     </header>
+
+
+     <!-- 4) main | contiene a las tres secciones -->
+     <main>
+          <!-- 5) section 1 | enlaces a redes sociales -->
+          <section class="seccion-1-iconos">
+               <div class="enlaces-iconos">
+                    <a href=""><i class="fa-brands fa-linkedin fa-2xl" style="color: #BCC7C7;"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter fa-2xl" style="color: #BCC7C7;"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: #BCC7C7;"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-2xl" style="color: #BCC7C7;"></i></a>
+               </div>
+          </section>
+
+          <!-- section iniciar_sesion.html | formulario  -->
+          <section class="section-iniciar-sesion">
+               <div class="iniciar-sesion-formulario">
+                    <h2 class="seccion-titulo">
+                         <center>Iniciar Sesion</center>
+                    </h2>
+                    <!-- si yo no le agrego nada a la etiqueta form, por defecto, viaja por el metodo GET
+                         (la información que viaje será visible en la url)  -->
+                    <form class="form-iniciar-sesion" action="">
+                         <div class="iniciar-sesion-input">
+                              <label for="usuario">Email</label>
+                              <input class="" type="text" id="usuario" required>
+                         </div>
+                         <div class="iniciar-sesion-input">
+                              <label for="contrasenia">Contraseña</label>
+                              <input type="password" id="contrasenia" required>
+                         </div>
+                         <button class="btn-iniciar-sesion">Iniciar Sesion</button>
+                         <a class="seccion-titulo" href="./registrarse.html">Crear cuenta</a>
+                    </form>
+
+               </div>
+               <div class="iniciar-sesion-img">
+
+               </div>
+
+          </section>
+     </main>
+
+</body>
+
+</html>
