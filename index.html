@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ESTRUCTURA BÁSICA -->
+
+<!-- 1) head -->
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <!-- aqui deben estar los llamados a archivos .css-->
+     <link rel="stylesheet" href="./css/index.css">
+     <!--  Llamar a marco bootstrap, para barra de navegación responsive -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+     <!-- Código https://fontawesome.com para iconos de redes sociales en el footer -->
+     <script src="https://kit.fontawesome.com/2ebc501450.js" crossorigin="anonymous"></script>
+     <!-- desde aqui se deben importar las fuente google font -->
+     <!-- fuente google font 1 -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap"
+          rel="stylesheet">
+     <!-- fuente google font 2 -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Titan+One&display=swap"
+          rel="stylesheet">
+
+
+
+
+</head>
+
+
+<!-- 2) body | contiene al header, main, section-->
+
+<body>
+
+     <header>
+          <!-- ********************************************************************** -->
+          <!-- 3) nav |  -->
+
+          <!--  (opcional)INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN (opcional) -->
+          <nav class="navbar navbar-inverse">
+               <div class="container-fluid">
+                    <div class="navbar-header">
+                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                         </button>
+                         <div class="nav-marca-logo">
+                              <span class="titan-one-regular span-hover span-1">N</span>
+                              <span class="titan-one-regular span-hover span-2">Ú</span>
+                              <span class="titan-one-regular span-hover span-3">M</span>
+                              <span class="titan-one-regular span-hover span-4">E</span>
+                              <span class="titan-one-regular span-hover span-5">R</span>
+                              <span class="titan-one-regular span-hover span-6">O</span>
+                              <span class="titan-one-regular span-hover span-7">S</span>
+                         </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                         <ul class="nav navbar-nav">
+                              <li><a href="index.html" class="boton">Home</a></li>
+                              <li><a href="#" class="boton">Secciones</a></li>
+                              <li><a href="#" class="boton">Buscador</a></li>
+                              <li><a href="#" class="boton">Contacto</a></li>
+                              <li class="iniciar-sesion"><a href="./html/iniciar_sesion.html" class="boton">Iniciar
+                                        Sesion</a></li>
+                         </ul>
+
+                    </div>
+               </div>
+          </nav>
+          <!--  FIN CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  -->
+          <!-- ********************************************************************** -->
+     </header>
+
+
+     <!-- 4) main | contiene a las tres secciones -->
+     <main>
+          <!-- 5) section 1 | enlaces a redes sociales -->
+          <section class="seccion-1-iconos">
+               <div class="enlaces-iconos">
+                    <a href=""><i class="fa-brands fa-linkedin fa-2xl" style="color: #BCC7C7;"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter fa-2xl" style="color: #BCC7C7;"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: #BCC7C7;"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-2xl" style="color: #BCC7C7;"></i></a>
+               </div>
+          </section>
+
+          <!-- 6) section 2 | Presentación. Contiene la imagen principal, un los h1(titulo), h2(subtitulos), a (enlaces a registrarse) -->
+          <section class="seccion-2-presentacion">
+               <div class="cuadro-presentacion efecto-cristal">
+                    <!--     <div class="titulo-presentacion">
+                         <span class="titan-one-regular span-1">N</span>
+                         <span class="titan-one-regular span-2">Ú</span>
+                         <span class="titan-one-regular span-3">M</span>
+                         <span class="titan-one-regular span-4">E</span>
+                         <span class="titan-one-regular span-5">R</span>
+                         <span class="titan-one-regular span-6">O</span>
+                         <span class="titan-one-regular span-7">S</span>
+                    </div>
+                    -->
+                    <h2 class="montserrat-subrayada-regular">Ciudad Autónoma de Buenos Aires </h2>
+                    <p>Desde 1980</p>
+
+                    <a href="./html/registrarse.html" class="boton">Registrarse</a>
+               </div>
+          </section>
+
+          <!-- 7) section 3 | galeria -->
+          <section class="seccion-3-galeria">
+
+               <h2 class="seccion-titulo">Secciones</h2>
+
+               <div class="galeria-productos">
+                    <!--   -->
+                    <div class="producto">
+                         <div class="card card-frente">
+                              <div class="card-frente-texto">
+                                   <h2>Transporte</h2>
+                                   <h3>880</h3>
+                              </div>
+                         </div>
+                         <div class="card card-dorso">
+                              <h2>aaaaaa</h2>
+                              <h3>15756886</h3>
+                              <div class="etiqueta-enlace">
+                                   <a href="">Ver mas...</a>
+                              </div>
+                         </div>
+                    </div>
+                    <!--   -->
+                    <!--   -->
+                    <div class="producto">
+                         <div class="card card-frente">
+                              <div class="card-frente-texto">
+                                   <h2>Salud</h2>
+                                   <h3>880</h3>
+                              </div>
+                         </div>
+                         <div class="card card-dorso">
+                              <h2>aaaaaa</h2>
+                              <h3>15756886</h3>
+                              <div class="etiqueta-enlace">
+                                   <a href="">Ver mas...</a>
+                              </div>
+                         </div>
+                    </div>
+                    <!--   -->
+                    <!--   -->
+                    <div class="producto">
+                         <div class="card card-frente">
+                              <div class="card-frente-texto">
+                                   <h2>Educación</h2>
+                                   <h3>880</h3>
+                              </div>
+                         </div>
+                         <div class="card card-dorso">
+                              <h2>aaaaaa</h2>
+                              <h3>15756886</h3>
+                              <div class="etiqueta-enlace">
+                                   <a href="">Ver mas...</a>
+                              </div>
+                         </div>
+                    </div>
+                    <!--   -->
+                    <!--   -->
+                    <div class="producto">
+                         <div class="card card-frente">
+                              <div class="card-frente-texto">
+                                   <h2>Seguridad</h2>
+                                   <h3>880</h3>
+                              </div>
+                         </div>
+                         <div class="card card-dorso">
+                              <h2>aaaaaa</h2>
+                              <h3>15756886</h3>
+                              <div class="etiqueta-enlace">
+                                   <a href="">Ver mas...</a>
+                              </div>
+                         </div>
+                    </div>
+                    <!--   -->
+                    <!--   -->
+                    <div class="producto">
+                         <div class="card card-frente">
+                              <div class="card-frente-texto">
+                                   <h2>Comunidad</h2>
+                                   <h3>880</h3>
+                              </div>
+                         </div>
+                         <div class="card card-dorso">
+                              <h2>aaaaaa</h2>
+                              <h3>15756886</h3>
+                              <div class="etiqueta-enlace">
+                                   <a href="">Ver mas...</a>
+                              </div>
+                         </div>
+                    </div>
+                    <!--   -->
+                    <!--   -->
+                    <div class="producto">
+                         <div class="card card-frente">
+                              <div class="card-frente-texto">
+                                   <h2>Redes</h2>
+                                   <h3>880</h3>
+                              </div>
+                         </div>
+                         <div class="card card-dorso">
+                              <h2>aaaaaa</h2>
+                              <h3>15756886</h3>
+                              <div class="etiqueta-enlace">
+                                   <a href="">Ver mas...</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <!--   -->
+          </section>
+          <!-- 8) section 4 | buscador e indices de lectura -->
+          <section class="seccion-4-buscador">
+               <div class="buscador-titulo">
+                    <div class="buscador-pregunta">
+                         <h2 class="seccion-titulo">Buscador</h2>
+                         <h2 class="encontraste">Si no encontraste lo que buscabas.</h2>
+                    </div>
+                    <div class="buscador-prueba">
+                         <h2 class="prueba">Prueba aquí...</h2>
+                         <div class="buscador">
+                              <input class="buscar " type="text" placeholder="Buscar en el sitio...">
+                              <button class="buscar"><i class="fa-solid fa-magnifying-glass fa-xl"
+                                        style="color: #fafafa;"></i></button>
+                         </div>
+                    </div>
+               </div>
+               <div class="lista-temas">
+                    <ul>
+                         <li><a href="">Teléfonos útiles</a></li>
+                         <hr>
+                         <li><a href="">Imagénes del sitio</a></li>
+                         <hr>
+                         <li><a href="">Fechas patrias</a></li>
+                         <hr>
+                         <li><a href="">Ubicación mapas</a></li>
+                         <hr>
+
+                    </ul>
+               </div>
+          </section>
+
+          <!-- 9) section 5 | apis datos -->
+          <section class="seccion-5-apis-datos">
+               <!--     <h2>Datos interesantes..</h2>  -->
+               <div class="datos">
+                    <div class="dato">
+                         <div class="dato-img">
+                              <i class="fa-solid fa-calendar-days fa-2xl"></i>
+                         </div>
+                         <div class="dato-texto-fecha-hora">
+                              <p></p>
+                         </div>
+                    </div>
+                    <div class="dato">
+                         <div class="dato-img">
+                              <i class="fa-solid fa-temperature-low fa-2xl"></i>
+                         </div>
+                         <div class="dato-texto-clima">
+                              <p></p>
+                         </div>
+                    </div>
+                    <div class="dato">
+                         <div class="dato-img">
+                              <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+                         </div>
+                         <div class="dato-texto-cambio">
+                              <p></p>
+                         </div>
+                    </div>
+                    <div class="dato">
+                         <div class="dato-img">
+                              <i class="fa-solid fa-train-subway fa-2xl"></i>
+                         </div>
+                         <div class="dato-texto-transporte">
+                              <p></p>
+                         </div>
+                    </div>
+                    <div class="dato">
+                         <div class="dato-img">
+                              <i class="fa-solid fa-face-smile fa-2xl"></i>
+                         </div>
+                         <div class="dato-texto-fecha-importante">
+                              <p></p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </main>
+
+
+     <!-- 10) footer | contiene a los visto en 3) nav -->
+     <footer></footer>
+     <!-- 11) script |  -->
+     <!-- relacionar archivo html con js -->
+     <script src="./js/index.js"></script>
+
+
+
+</body>
+
+</html>
