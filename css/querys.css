@@ -28,7 +28,7 @@
 
           /*  inicio index.html section 1 | enlaces a redes sociales  */
           .enlaces-iconos {
-                    width: 70%;
+                    width: 80% !important;
           }
 
           /*  fin section index.html 1 | enlaces a redes sociales  */
@@ -43,7 +43,7 @@
 
           /* ******* inicio index.html seccion-2 presentacion *************** */
           .seccion-2-presentacion {
-                    height: 80vh;
+                    height: 500px;
                     width: 92%;
 
                     border-radius: 10px;
@@ -60,7 +60,7 @@
 
           .cuadro-presentacion {
                     /* este elemento fue centrado desde su padre .seccion-1-presentacion */
-                    height: 40vh;
+                    height: 300px;
                     width: 80%;
                     /*  border: 3px rgb(124, 211, 232) solid; */
                     border-radius: 10px;
@@ -82,8 +82,8 @@
           .seccion-2-presentacion a {
                     /* boton Registrarse */
                     background-color: #EB8B88;
-                    width: 3vh;
-                    width: 40%;
+                    height: 50px;
+                    width: 60%;
                     margin: 5px;
                     color: white;
                     font-size: 1.8rem;
@@ -101,8 +101,9 @@
           /* ******* inicio index.html seccion-3 galeria *************** */
           .seccion-3-galeria {
                     /* Contiene el titulo y la galeria de productos */
-                    height: 340vh;
-
+                    height: 2850px;
+                    width: 100%;
+                    margin-top: 60px;
           }
 
           .galeria-productos {
@@ -110,7 +111,8 @@
 y por eso, esta classe debe estar en las @medias querys*/
                     height: 330vh;
                     width: 90%;
-                    margin-bottom: 2vh;
+                    margin-bottom: 30px;
+                    margin-left: 4%;
                     /* centrar a los elemento hijos */
                     display: block;
                     /* Convertimos al contenedor en flexbox */
@@ -168,6 +170,15 @@ transform: translate(-50%, -50%); */
 
 
           /* ******* inicio index.html seccion-4 buscador *************** */
+          .seccion-4-buscador {
+                    height: 700px;
+                    width: 100%;
+                    /* centrar a los elementos hijos */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+          }
 
           .encontraste,
           .prueba {
@@ -203,7 +214,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           .buscador {
                     /* Contiene al input y al boton del buscador */
                     background-color: white;
-                    height: 7vh;
+                    height: 50px;
                     width: 80%;
                     margin-left: 2%;
                     border: 1px gray solid;
@@ -217,7 +228,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .buscador input {
                     background-color: transparent;
-                    height: 4vh;
+                    height: 40px;
                     width: 85%;
                     padding-left: 10px;
                     /* quitar decoraciones del input */
@@ -227,8 +238,8 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .buscador button {
                     background-color: rgb(97, 97, 112);
-                    height: 6.5vh;
-                    width: 14%;
+                    height: 45px;
+                    width: 15%;
                     padding: 5px;
                     border: none;
                     border-radius: 70px;
@@ -463,9 +474,10 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           /* FIN CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
 
 
+
           /*  inicio index.html section 1 | enlaces a redes sociales  */
           .enlaces-iconos {
-                    width: 70%;
+                    width: 80% !important;
           }
 
           /*  fin index.html section 1 | enlaces a redes sociales  */
@@ -480,11 +492,11 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           /* ******* inicio index.html seccion-2 presentacion *************** */
           .seccion-2-presentacion {
-                    height: 80vh;
+                    height: 500px;
                     width: 92%;
 
                     border-radius: 10px;
-                    margin-left: 3%;
+                    margin-left: 4%;
                     background-image: url(../img/presentacion.jpg);
                     background-position: center;
                     background-size: cover;
@@ -497,7 +509,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .cuadro-presentacion {
                     /* este elemento fue centrado desde su padre .seccion-1-presentacion */
-                    height: 40vh;
+                    height: 200px;
                     width: 80%;
                     /*  border: 3px rgb(124, 211, 232) solid; */
                     border-radius: 10px;
@@ -536,7 +548,8 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           /* ******* inicio index.html seccion-3 galeria *************** */
           .seccion-3-galeria {
                     /* Contiene el titulo y la galeria de productos */
-                    height: 340vh;
+                    height: 2880px;
+                    margin-top: 50px;
 
           }
 
@@ -545,7 +558,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 y por eso, esta classe debe estar en las @medias querys*/
                     height: 330vh;
                     width: 90%;
-                    margin-left: 4%;
+                    margin-left: 5%;
                     margin-bottom: 2vh;
                     /* centrar a los elemento hijos */
                     display: block;
@@ -606,6 +619,15 @@ transform: translate(-50%, -50%); */
 
 
           /* ******* inicio index.html seccion-4 buscador *************** */
+          .seccion-4-buscador {
+                    height: 700px;
+                    width: 100%;
+                    /* centrar a los elementos hijos */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+          }
 
           .encontraste,
           .prueba {
@@ -655,7 +677,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .buscador input {
                     background-color: transparent;
-                    height: 4vh;
+                    height: 50px;
                     width: 85%;
                     padding-left: 10px;
                     /* quitar decoraciones del input */
@@ -676,16 +698,16 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           /* *******    INICIO REGISTRARSE.HTML    *************** */
           .section-registrarse {
-                    height: 100vh;
+                    min-height: 1200px;
                     width: 96%;
-                    margin: 4% 2% auto 2%;
+                    margin: 4% 2% 50px 2%;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
           }
 
           .registrarse-formulario {
-                    height: 70vh;
+                    min-height: 1180px;
                     width: 100%;
           }
 
@@ -694,9 +716,9 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           }
 
           .form-registrarse {
-                    height: 50vh;
+                    height: 1180px;
                     width: 90%;
-                    margin: 2vh 5%;
+                    margin: 50px 5%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -705,8 +727,8 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .registrarse-input input,
           select {
-                    height: 4vh;
-                    width: 80%;
+                    height: 50px;
+                    width: 100%;
                     text-align: center;
                     /* quitar decoraciones del input */
                     border: 0;
@@ -716,9 +738,9 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           .registrarse-input {
                     /* en dispositivos muy pequeños,
           el label se ubicará sobre el input */
-                    height: 14vh;
+                    height: 100px;
                     width: 100%;
-                    margin-top: 20px;
+                    margin-top: 10px;
                     font-size: 2rem;
                     border-bottom: 2px #FFA202 solid;
                     display: flex;
@@ -727,9 +749,9 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           }
 
           .registrarse-input label {
-                    height: 6vh;
+                    height: 40px;
                     width: auto;
-                    margin-bottom: 2vh;
+                    margin-bottom: 10px;
                     font-size: 2.5rem;
           }
 
@@ -751,8 +773,8 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .btn-registrarse {
                     background-color: #FFA202;
-                    width: 4vh;
-                    width: 30%;
+                    height: 50px;
+                    width: 40%;
                     margin: 5px;
                     color: white;
                     font-size: 1.8rem;
@@ -778,6 +800,16 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
 
           /* *******    INICIO INICIAR_SESION.HTML    *************** */
+          .seccion-4-buscador {
+                    width: 50vh;
+                    width: 100%;
+                    /* centrar a los elementos hijos */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+          }
+
           .section-iniciar-sesion {
                     height: 60vh;
                     width: 92%;
@@ -799,6 +831,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           .form-iniciar-sesion {
                     height: 50vh;
                     width: 90%;
+                    margin-top: 50px;
                     margin-left: 5%;
                     display: flex;
                     flex-direction: column;
@@ -834,8 +867,8 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .btn-iniciar-sesion {
                     background-color: #333CEB;
-                    width: 4vh;
-                    width: 60%;
+                    height: 50px;
+                    width: 40%;
                     margin: 5px;
                     color: white;
                     font-size: 1.8rem;
@@ -862,7 +895,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           .seccion-titulo {
                     /* son los titulos de las seccionnes ("Secciones", "Buscador")
                     esto va en la @media query*/
-                    font-size: 35px;
+                    font-size: 28px;
           }
 
 
@@ -906,7 +939,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .nav-marca-logo {
                     /* span */
-                    font-size: 4vh;
+                    font-size: 3vh;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -921,9 +954,17 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           /* FIN CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
 
+          /*  inicio index.html section 1 | enlaces a redes sociales  */
+          .enlaces-iconos {
+                    width: 60% !important;
+          }
+
+          /*  fin index.html section 1 | enlaces a redes sociales  */
+
+
           /* ******* inicio index.html seccion-2 presentacion *************** */
           .seccion-2-presentacion {
-                    height: 80vh;
+                    height: 400px;
                     width: 94%;
 
                     border-radius: 10px;
@@ -940,7 +981,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .cuadro-presentacion {
                     /* este elemento fue centrado desde su padre .seccion-1-presentacion */
-                    height: 40vh;
+                    height: 200px;
                     width: 90%;
                     /*  border: 3px rgb(124, 211, 232) solid; */
                     border-radius: 10px;
@@ -962,8 +1003,8 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           .seccion-2-presentacion a {
                     /* boton Registrarse */
                     background-color: #EB8B88;
-                    width: 3vh;
-                    width: 35%;
+                    height: 40px;
+                    width: 200px !important;
                     margin: 5px;
                     color: white;
                     font-size: 1.8rem;
@@ -981,15 +1022,16 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           /* ******* inicio index.html seccion-3 galeria *************** */
           .seccion-3-galeria {
                     /* Contiene el titulo y la galeria de productos */
-                    height: 340vh;
+                    padding-top: 40px;
+                    height: 2550px !important;
           }
 
           .galeria-productos {
                     /* Contiene las 6 tarjetas giratorias 
           y por eso, esta classe debe estar en las @medias querys*/
-                    height: 330vh;
-                    width: 90%;
-                    margin-bottom: 2vh;
+                    height: 2500px !important;
+                    width: 70%;
+                    margin-left: 15%;
                     /* centrar a los elemento hijos */
                     display: block;
                     /* Convertimos al contenedor en flexbox */
@@ -1003,9 +1045,9 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .producto {
                     /* Contiene la card-frente y card-dorso */
-                    height: 45vh;
-                    width: 80%;
-                    margin: 10vh 10%;
+                    height: 350px;
+                    width: 100%;
+                    margin-bottom: 50px;
                     /* centrar a los elemento hijos */
                     display: flex;
                     /* Convertimos al contenedor en flexbox */
@@ -1022,9 +1064,9 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           .card {
                     /* class de card-frente y card-dorso  */
                     position: absolute;
-                    height: 45vh;
+                    height: 340px;
                     /* ancho proporcional a su elemento padre */
-                    width: 80%;
+                    width: 70%;
 
                     /* animación */
                     /* no permitir elegir si el usuario debe ver la cara posterior */
@@ -1040,6 +1082,15 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
 
           /* ******* inicio index.html seccion-4 buscador *************** */
+          .seccion-4-buscador {
+                    height: 700px;
+                    width: 100%;
+                    /* centrar a los elementos hijos */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+          }
 
           .encontraste,
           .prueba {
@@ -1054,6 +1105,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
                     /*  */
                     background-color: #F8E7DB;
                     width: 90%;
+                    margin-left: 5%;
                     padding-bottom: 3vh;
                     /* centrar a los elementos hijos */
                     display: flex;
@@ -1110,7 +1162,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           /* *******    INICIO REGISTRARSE.HTML    *************** */
           .section-registrarse {
-                    height: 100vh;
+                    min-height: 740px;
                     width: 96%;
                     margin: 4% 2% auto 2%;
                     display: flex;
@@ -1119,7 +1171,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           }
 
           .registrarse-formulario {
-                    height: 70vh;
+                    height: 730px;
                     min-width: 350px;
                     width: 100%;
           }
@@ -1131,6 +1183,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           .form-registrarse {
                     height: 50vh;
                     width: 90%;
+                    padding-top: 50px;
                     margin-left: 5%;
                     display: flex;
                     flex-direction: column;
@@ -1198,11 +1251,11 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .btn-registrarse {
                     background-color: #FFA202;
-                    width: 4vh;
-                    width: 40%;
+                    height: 50px;
+                    width: 30%;
                     margin: 5px;
                     color: white;
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                     padding: 3px 3px;
                     border: none;
                     text-align: center;
@@ -1226,7 +1279,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           /* *******    INICIO INICIAR_SESION.HTML    *************** */
           .section-iniciar-sesion {
-                    height: 60vh;
+                    min-height: 580px;
                     width: 96%;
                     margin: 4% 2% auto 2%;
                     display: flex;
@@ -1235,7 +1288,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           }
 
           .iniciar-sesion-formulario {
-                    height: 70vh;
+                    height: 570px;
                     min-width: 350px;
                     width: 100%;
           }
@@ -1245,9 +1298,10 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           }
 
           .form-iniciar-sesion {
-                    height: 50vh;
+                    height: 400px;
                     width: 90%;
                     margin-left: 5%;
+                    padding-top: 50px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -1255,9 +1309,9 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           }
 
           .iniciar-sesion-input {
-                    height: 5vh;
+                    height: 20px;
                     width: 100%;
-                    margin-top: 20px;
+
                     font-size: 2.5rem;
                     border-bottom: 2px #333CEB solid;
                     display: flex;
@@ -1266,8 +1320,9 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           }
 
           .iniciar-sesion-input input {
-                    height: 4vh;
-                    width: 64%;
+                    height: 35px;
+                    width: 74%;
+                    margin-bottom: 20px !important;
                     text-align: center;
                     /* quitar decoraciones del input */
                     border: 0;
@@ -1282,8 +1337,8 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .btn-iniciar-sesion {
                     background-color: #333CEB;
-                    width: 4vh;
-                    width: 60%;
+                    height: 50px;
+                    width: 30%;
                     margin: 5px;
                     color: white;
                     font-size: 1.8rem;
@@ -1365,9 +1420,217 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
           }
 
 
+          /* ******* inicio index.html seccion-2 presentacion *************** */
+          .seccion-2-presentacion {
+                    height: 80vh;
+                    width: 80%;
+
+                    border-radius: 10px;
+                    margin-left: 10%;
+                    background-image: url(../img/presentacion.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    /* centrar el elemento hijo */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+          }
+
+          .cuadro-presentacion {
+                    /* este elemento fue centrado desde su padre .seccion-1-presentacion */
+                    height: 30vh;
+                    width: 80%;
+                    /*  border: 3px rgb(124, 211, 232) solid; */
+                    border-radius: 10px;
+                    /* centrar a los elementos hijos */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+          }
+
+          .cuadro-presentacion h2 {
+                    /* h2 "Ciudad de Bs As..." */
+                    color: #EB8B88;
+                    font-size: 5rem;
+                    text-align: center;
+          }
+
+          .nav-marca-logo {
+
+                    font-size: 4rem;
+                    letter-spacing: 15px;
+                    /* centrar el elemento hijo */
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+          }
+
+          .seccion-2-presentacion a {
+                    background-color: #EB8B88;
+                    width: 5vh;
+                    width: 20%;
+                    margin: 5px;
+                    color: white;
+                    font-size: 2.5rem;
+                    padding: 7px 5px;
+                    border-radius: 6px;
+                    text-align: center;
+                    /* quitar decoracion al enlace */
+                    text-decoration: none;
+          }
+
+          /* ******* fin index.html seccion-2 presentacion *************** */
+
+
+          /* ******* inicio index.html seccion-3 galeria *************** */
+          .seccion-3-galeria {
+                    /* Contiene el titulo y la galeria de productos */
+                    margin: 5vh 0;
+                    height: 100vh;
+                    width: 100%;
+                    /* background-image: url(../img/galeria.jpg); */
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                    /* centrar a los elemento hijos */
+                    display: flex;
+                    /* Convertimos al contenedor en flexbox */
+                    flex-direction: column;
+                    /* on esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+                    justify-content: space-around;
+                    align-items: center;
+          }
+
+          .galeria-productos {
+                    /* Contiene las 6 tarjetas giratorias 
+        y por eso, esta classe debe estar en las @medias querys*/
+                    height: 80vh;
+                    width: 90%;
+                    /* centrar a los elemento hijos */
+                    display: flex;
+                    /* Convertimos al contenedor en flexbox */
+                    flex-direction: row;
+                    /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+                    justify-content: space-between;
+                    /* Con esto le indicamos que si llega al margen del contenedor que se posicione abajo del otro item */
+                    flex-wrap: wrap;
+          }
+
+
+          .producto {
+                    /* Contiene la card-frente y card-dorso */
+                    height: 35vh;
+                    width: 32%;
+                    /* centrar a los elemento hijos */
+                    display: flex;
+                    /* Convertimos al contenedor en flexbox */
+                    flex-direction: column;
+                    align-items: center;
+
+                    /* ocultar todo lo que este fuera del div 
+                  overflow: hidden; */
+
+                    /* animación 
+                  transform: translate(-50%, -50%); */
+          }
+
+          .card {
+                    /* class de card-frente y card-dorso  */
+                    position: absolute;
+                    height: 35vh;
+                    /* ancho proporcional a su elemento padre */
+                    width: 28%;
+
+                    /* animación */
+                    /* no permitir elegir si el usuario debe ver la cara posterior */
+                    backface-visibility: hidden;
+                    /* controlar la velocidad de la animación al cambiar las propiedades de CSS */
+                    transition: 1s;
+
+                    /* ocultar todo lo que este fuera del div */
+                    overflow: hidden;
+          }
+
+          /* ******* fin index.html seccion-3 secciones *************** */
+
+
+          /* ******* inicio index.html seccion-4 buscador *************** */
+          .seccion-4-buscador {
+                    height: 500px;
+                    width: 100%;
+                    /* centrar a los elementos hijos */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+          }
+
+          .buscador-titulo,
+          .buscador-pregunta {
+                    background-color: #F8E7DB;
+                    width: 90%;
+                    /* centrar a los elementos hijos */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+          }
+
+
+
+          .buscador-prueba {
+                    width: 100%;
+                    /* centrar a los elementos hijos */
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+          }
+
+          .buscador {
+                    background-color: white;
+                    height: 5vh;
+                    width: 30%;
+                    border: 1px gray solid;
+                    margin-left: 8%;
+                    /* centrar el elemento hijo */
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    border-radius: 30px;
+          }
+
+          .buscador input {
+                    background-color: transparent;
+                    height: 4vh;
+                    width: 85%;
+                    padding-left: 10px;
+                    /* quitar decoraciones del input */
+                    border: 0;
+                    outline: none;
+          }
+
+          .buscador button {
+                    background-color: rgb(97, 97, 112);
+                    height: 4.5vh;
+                    width: 9%;
+                    padding: 5px;
+                    border: none;
+                    border-radius: 70px;
+          }
+
+
+
+          /* ******* fin index.html seccion-4 buscador *************** */
+
           /* *******    INICIO REGISTRARSE.HTML    *************** */
           .section-registrarse {
-                    height: 80vh;
+                    height: 95vh;
                     width: 96%;
                     margin: 4% 2% auto 2%;
                     display: flex;
@@ -1384,7 +1647,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .registrarse-img {
                     background-color: #a4eb88;
-                    height: 70vh;
+                    height: 90vh;
                     width: 100%;
 
                     background-image: url(../img/formulario-registrarse.jpg);
@@ -1494,7 +1757,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           /* *******    INICIO INICIAR_SESION.HTML    *************** */
           .section-iniciar-sesion {
-                    height: 60vh;
+                    height: 95vh;
                     width: 96%;
                     margin: 4% 2% auto 2%;
                     display: flex;
@@ -1510,7 +1773,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
           .iniciar-sesion-img {
                     background-color: #EBE233;
-                    height: 70vh;
+                    height: 90vh;
                     width: 100%;
                     background-image: url(../img/formulario-iniciar-sesion2.jpg);
                     background-position: center;
