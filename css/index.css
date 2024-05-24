@@ -1,360 +1,1100 @@
-/* relacionar con otro archivo css */
-@import url(./querys.css);
+/* **** INICIO DE @MEDIA QUERYS ************************************************************************** */
+
+/* a modo práctico, cada @media tiene reescritas cada página */
 
 
-/* en este archivo aparecerán solo los atributos generales para los distintos tamaños de dispositivos */
 
-/* Selector universal*/
-* {
-  margin: 0;
-  padding: 0;
-}
+/* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
+@media only screen and (max-width: 400px) {
 
-body {
-  background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  /* INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
+  .navbar-header {
+    background-color: #4bb123;
+  }
 
-/* ******* fuente google font 1 *************** */
-.montserrat-subrayada-regular {
-  font-family: "Montserrat Subrayada", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  .nav-marca-logo {
+    font-size: 3rem !important;
+    letter-spacing: 5px;
+    margin-top: 5px;
+  }
 
-/* ******* fuente google font 2 *************** */
-.titan-one-regular {
-  font-family: "Titan One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+  .boton {
+    /* son los enlaces dentro del menú desplegable de bootstrap */
+    font-size: 20px;
+  }
 
-/* ********************** */
+  /* FIN CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
 
-.seccion-titulo {
-  /* son los titulos de las seccionnes ("Secciones", "Buscador")
+
+  /*  inicio index.html section 1 | enlaces a redes sociales  */
+  .enlaces-iconos {
+    width: 80% !important;
+  }
+
+  /*  fin section index.html 1 | enlaces a redes sociales  */
+
+
+  .seccion-titulo {
+    /* son los titulos de las seccionnes ("Secciones", "Buscador")
           esto va en la @media query*/
-  width: 100%;
-  font-size: 50px;
-  text-align: center;
+    font-size: 22px;
+  }
+
+
+  /* ******* inicio index.html seccion-2 presentacion *************** */
+  .seccion-2-presentacion {
+    min-height: 500px;
+    width: 92%;
+
+    border-radius: 10px;
+    margin-left: 3%;
+    background-image: url(../img/presentacion.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* centrar el elemento hijo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cuadro-presentacion {
+    /* este elemento fue centrado desde su padre .seccion-1-presentacion */
+    height: 300px;
+    width: 80%;
+    /*  border: 3px rgb(124, 211, 232) solid; */
+    border-radius: 10px;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cuadro-presentacion h2 {
+    /*h2 Ciudad de Bs As...*/
+    color: #EB8B88;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+
+  .seccion-2-presentacion a {
+    /* boton Registrarse */
+    background-color: #EB8B88;
+    height: 50px;
+    width: 60%;
+    margin: 5px;
+    color: white;
+    font-size: 1.8rem;
+    padding: 7px 5px;
+    border-radius: 6px;
+    text-align: center;
+    /* quitar decoracion al enlace */
+    text-decoration: none;
+  }
+
+  /* ******* fin index.html seccion-2 presentacion *************** */
+
+
+
+  /* ******* inicio index.html seccion-3 galeria *************** */
+  .seccion-3-galeria {
+    /* Contiene el titulo y la galeria de productos */
+
+    /* debe contener los 1500px de la galeria
+    sumarle los 50px del titulo
+    sumarle los 35px de top
+    sumarle los 40px de boottom
+    total = 1625px */
+    min-height: 1625px;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .galeria-productos {
+    /* Contiene las 6 tarjetas giratorias 
+y por eso, esta classe debe estar en las @medias querys*/
+
+    /* son 6 card * 200px = 1200px
+    sumarle 50px*6=300px de bottom
+    total de 1500px */
+    min-height: 1500px;
+    width: 90%;
+    margin-bottom: 30px;
+    margin-left: 4%;
+    /* centrar a los elemento hijos */
+    display: block;
+    /* Convertimos al contenedor en flexbox */
+    flex-direction: column;
+    /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+    justify-content: space-between;
+    /* Con esto le indicamos que si llega al margen del contenedor que se posicione abajo del otro item 
+          flex-wrap: wrap;*/
+    align-items: center;
+  }
+
+  .producto {
+    /* Contiene la card-frente y card-dorso */
+    min-height: 200px;
+    width: 80%;
+    margin: 50px 7%;
+    /* centrar a los elemento hijos */
+    display: flex;
+    /* Convertimos al contenedor en flexbox */
+    flex-direction: column;
+    align-items: center;
+
+    /* ocultar todo lo que este fuera del div 
+overflow: hidden; */
+
+    /* animación 
+transform: translate(-50%, -50%); */
+  }
+
+  .card {
+    /* class de card-frente y card-dorso  */
+    position: absolute;
+    min-height: 200px;
+    /* ancho proporcional a su elemento padre */
+    width: 80%;
+
+    /* animación */
+    /* no permitir elegir si el usuario debe ver la cara posterior */
+    backface-visibility: hidden;
+    /* controlar la velocidad de la animación al cambiar las propiedades de CSS */
+    transition: 1s;
+
+    /* ocultar todo lo que este fuera del div */
+    overflow: hidden;
+  }
+
+  .producto h2,
+  .producto h3 {
+    /* h2 y h3 de las tarjetas */
+    font-size: 25px;
+    color: black;
+  }
+
+  /* ******* fin index.html seccion-3 galeria *************** */
+
+
+  /* ******* inicio index.html seccion-4 buscador *************** */
+  .seccion-4-buscador {
+    height: 700px;
+    width: 100%;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .encontraste,
+  .prueba {
+    /* es el texto en la seccion del buscador 
+h2 "Si no encontraste lo que buscabas. Prueba aqui"
+*/
+    font-size: 20px;
+  }
+
+  .buscador-titulo,
+  .buscador-pregunta {
+    /*  */
+    background-color: #F8E7DB;
+    width: 90%;
+    padding-bottom: 20px;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .buscador-prueba {
+    /* h2 "Prueba aqui..." y buscador */
+    width: 100%;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buscador {
+    /* Contiene al input y al boton del buscador */
+    background-color: white;
+    height: 45px;
+    width: 80%;
+    margin-left: 2%;
+    border: 1px gray solid;
+    /* centrar el elemento hijo */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+  }
+
+  .buscador input {
+    background-color: transparent;
+    height: 43px;
+    width: 85%;
+    padding-left: 10px;
+    /* quitar decoraciones del input */
+    border: 0;
+    outline: none;
+  }
+
+  .buscador button {
+    background-color: rgb(97, 97, 112);
+    height: 41px;
+    width: 44px;
+    padding: 5px;
+    border: none;
+    border-radius: 70px;
+  }
+
+  /* ******* fin index.html seccion-4 buscador *************** */
 }
 
-.campos-obligatorios {
-  font-size: 15px;
+
+
+
+/* Media query para teléfonos STANDAR móviles SM XS */
+@media only screen and (min-width: 401px) and (max-width: 767px) {
+
+  /* INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
+  .navbar-header {
+    background-color: #4bb123;
+  }
+
+  .nav-marca-logo {
+    font-size: 3.5rem;
+    letter-spacing: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boton {
+    /* son los enlaces dentro del menú desplegable de bootstrap */
+    font-size: 22px;
+  }
+
+  /* FIN CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
+
+
+
+  /*  inicio index.html section 1 | enlaces a redes sociales  */
+  .enlaces-iconos {
+    width: 80% !important;
+  }
+
+  /*  fin index.html section 1 | enlaces a redes sociales  */
+
+
+  .seccion-titulo {
+    /* son los titulos de las seccionnes ("Secciones", "Buscador")
+          esto va en la @media query*/
+    font-size: 32px;
+  }
+
+
+  /* ******* inicio index.html seccion-2 presentacion *************** */
+  .seccion-2-presentacion {
+    height: 500px;
+    width: 92%;
+
+    border-radius: 10px;
+    margin-left: 4%;
+    background-image: url(../img/presentacion.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* centrar el elemento hijo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cuadro-presentacion {
+    /* este elemento fue centrado desde su padre .seccion-1-presentacion */
+    height: 200px;
+    width: 80%;
+    /*  border: 3px rgb(124, 211, 232) solid; */
+    border-radius: 10px;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cuadro-presentacion h2 {
+    /*h2 Ciudad de Bs As...*/
+    color: #EB8B88;
+    font-size: 3.3rem;
+    text-align: center;
+  }
+
+
+  .seccion-2-presentacion a {
+    /* boton Registrarse */
+    background-color: #EB8B88;
+    width: 22px;
+    width: 40%;
+    margin: 5px;
+    color: white;
+    font-size: 2rem;
+    padding: 7px 5px;
+    border-radius: 6px;
+    text-align: center;
+    /* quitar decoracion al enlace */
+    text-decoration: none;
+  }
+
+  /* ******* fin index.html seccion-2 presentacion *************** */
+
+  /* ******* inicio index.html seccion-3 galeria *************** */
+  .seccion-3-galeria {
+    /* Contiene el titulo y la galeria de productos */
+
+    /* debe contener los 1800px de la galeria
+    sumarle los 50px del titulo
+    sumarle los 35px de top
+    sumarle los 40px de boottom
+    total = 1925px */
+    height: 1925px;
+    margin-top: 50px;
+
+  }
+
+  .galeria-productos {
+    /* Contiene las 6 tarjetas giratorias 
+y por eso, esta classe debe estar en las @medias querys*/
+
+    /* son 6 card * 250px = 1500px
+    sumarle 50px*6=300px de bottom
+    total de 1800px */
+    min-height: 1800px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 30px;
+    /* centrar a los elemento hijos */
+    display: block;
+    /* Convertimos al contenedor en flexbox */
+    flex-direction: column;
+    /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+    justify-content: space-between;
+    /* Con esto le indicamos que si llega al margen del contenedor que se posicione abajo del otro item 
+          flex-wrap: wrap;*/
+    align-items: center;
+  }
+
+  .producto {
+    /* Contiene la card-frente y card-dorso */
+    min-height: 250px;
+    width: 80%;
+    margin: 50px 7%;
+    /* centrar a los elemento hijos */
+    display: flex;
+    /* Convertimos al contenedor en flexbox */
+    flex-direction: column;
+    align-items: center;
+
+    /* ocultar todo lo que este fuera del div 
+overflow: hidden; */
+
+    /* animación 
+transform: translate(-50%, -50%); */
+  }
+
+  .card {
+    /* class de card-frente y card-dorso  */
+    position: absolute;
+    min-height: 250px;
+    /* ancho proporcional a su elemento padre */
+    width: 80%;
+
+    /* animación */
+    /* no permitir elegir si el usuario debe ver la cara posterior */
+    backface-visibility: hidden;
+    /* controlar la velocidad de la animación al cambiar las propiedades de CSS */
+    transition: 1s;
+
+    /* ocultar todo lo que este fuera del div */
+    overflow: hidden;
+  }
+
+  .producto h2,
+  .producto h3 {
+    /* h2 y h3 de las tarjetas */
+    font-size: 25px;
+    color: black;
+  }
+
+  /* ******* fin index.html seccion-3 galeria *************** */
+
+
+
+
+  /* ******* inicio index.html seccion-4 buscador *************** */
+  .seccion-4-buscador {
+    height: 700px;
+    width: 100%;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .encontraste,
+  .prueba {
+    /* es el texto en la seccion del buscador 
+h2 "Si no encontraste lo que buscabas. Prueba aqui"
+*/
+    font-size: 20px;
+  }
+
+  .buscador-titulo,
+  .buscador-pregunta {
+    /*  */
+    background-color: #F8E7DB;
+    width: 90%;
+    padding-bottom: 20px;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .buscador-prueba {
+    /* h2 "Prueba aqui..." y buscador */
+    width: 100%;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buscador {
+    /* Contiene al input y al boton del buscador */
+    background-color: white;
+    min-height: 40px;
+    width: 80%;
+    margin-left: 2%;
+    border: 1px gray solid;
+    /* centrar el elemento hijo */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+  }
+
+  .buscador input {
+    background-color: transparent;
+    min-height: 50px;
+    width: 85%;
+    padding-left: 10px;
+    /* quitar decoraciones del input */
+    border: 0;
+    outline: none;
+  }
+
+  .buscador button {
+    background-color: rgb(97, 97, 112);
+    min-height: 38px;
+    width: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 70px;
+  }
+
+  /* ******* fin index.html seccion-4 buscador *************** */
 }
 
-/* boton activar estilo con un clic */
-.boton:active {
-  transform: scale(0.90);
-  /* Scaling button to 0.98 to its original size */
-  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-  /* Lowering the shadow */
+
+
+
+/* Media query para tabletas MD */
+@media only screen and (min-width: 768px) and (max-width:991px) {
+  .seccion-titulo {
+    /* son los titulos de las seccionnes ("Secciones", "Buscador")
+                    esto va en la @media query*/
+    font-size: 28px;
+  }
+
+
+  /* INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
+  /* ******* inicio 3) nav | CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN *************** */
+
+  .nav {
+    background-color: #4bb123;
+  }
+
+
+  .container-fluid {
+    background-color: #4bb123;
+    height: 10vh;
+    width: 100%;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    background-color: antiquewhite;
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  .navbar-collapse,
+  .collapse,
+  .navbar-header {
+    background-color: #4bb123 !important;
+    border: none !important;
+  }
+
+  /* efecto hover en los enlaces */
+  .navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #FFA202 !important;
+  }
+
+  .nav-marca-logo {
+    /* span */
+    font-size: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boton {
+    /* son los enlaces dentro del menú desplegable de bootstrap */
+    font-size: 15px;
+    color: #F1F5F5 !important;
+  }
+
+  /* FIN CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
+
+  /*  inicio index.html section 1 | enlaces a redes sociales  */
+  .enlaces-iconos {
+    width: 60% !important;
+  }
+
+  /*  fin index.html section 1 | enlaces a redes sociales  */
+
+
+  /* ******* inicio index.html seccion-2 presentacion *************** */
+  .seccion-2-presentacion {
+    height: 400px;
+    width: 94%;
+
+    border-radius: 10px;
+    margin-left: 3%;
+    background-image: url(../img/presentacion.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* centrar el elemento hijo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cuadro-presentacion {
+    /* este elemento fue centrado desde su padre .seccion-1-presentacion */
+    height: 200px;
+    width: 90%;
+    /*  border: 3px rgb(124, 211, 232) solid; */
+    border-radius: 10px;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cuadro-presentacion h2 {
+    /*h2 Ciudad de Bs As...*/
+    color: #EB8B88;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+
+  .seccion-2-presentacion a {
+    /* boton Registrarse */
+    background-color: #EB8B88;
+    height: 40px;
+    width: 200px !important;
+    margin: 5px;
+    color: white;
+    font-size: 1.8rem;
+    padding: 7px 5px;
+    border-radius: 6px;
+    text-align: center;
+    /* quitar decoracion al enlace */
+    text-decoration: none;
+  }
+
+  /* ******* fin index.html seccion-2 presentacion *************** */
+
+
+
+  /* ******* inicio index.html seccion-3 galeria *************** */
+  .seccion-3-galeria {
+    /* Contiene el titulo y la galeria de productos */
+
+
+    /* debe contener los 2460px de la galeria
+    sumarle los 50px del titulo
+    sumarle los 50px de top de la galeria
+    sumarle los 40px de boottom de la galeria
+    total = 1625px */
+    padding-top: 40px;
+    height: 2600px;
+  }
+
+  .galeria-productos {
+    /* Contiene las 6 tarjetas giratorias 
+          y por eso, esta classe debe estar en las @medias querys*/
+
+    /* son 6 card * 350px = 2100px
+    sumarle 60px*6=360px de bottom
+    total de 2500px */
+    min-height: 2460px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 50px;
+    /* centrar a los elemento hijos */
+    display: block;
+    /* Convertimos al contenedor en flexbox */
+    flex-direction: column;
+    /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+    justify-content: space-between;
+    /* Con esto le indicamos que si llega al margen del contenedor que se posicione abajo del otro item 
+                    flex-wrap: wrap;*/
+    align-items: center;
+  }
+
+  .producto {
+    /* Contiene la card-frente y card-dorso */
+    height: 350px;
+    width: 100%;
+    margin-bottom: 60px;
+    /* centrar a los elemento hijos */
+    display: flex;
+    /* Convertimos al contenedor en flexbox */
+    flex-direction: column;
+    align-items: center;
+
+    /* ocultar todo lo que este fuera del div 
+          overflow: hidden; */
+
+    /* animación 
+          transform: translate(-50%, -50%); */
+  }
+
+  .card {
+    /* class de card-frente y card-dorso  */
+    position: absolute;
+    height: 350px;
+    /* ancho proporcional a su elemento padre */
+    width: 70%;
+
+    /* animación */
+    /* no permitir elegir si el usuario debe ver la cara posterior */
+    backface-visibility: hidden;
+    /* controlar la velocidad de la animación al cambiar las propiedades de CSS */
+    transition: 1s;
+
+    /* ocultar todo lo que este fuera del div */
+    overflow: hidden;
+  }
+
+  /* ******* fin index.html seccion-3 galeria *************** */
+
+
+  /* ******* inicio index.html seccion-4 buscador *************** */
+  .seccion-4-buscador {
+    height: 700px;
+    width: 100%;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .encontraste,
+  .prueba {
+    /* es el texto en la seccion del buscador 
+          h2 "Si no encontraste lo que buscabas. Prueba aqui"
+          */
+    font-size: 20px;
+  }
+
+  .buscador-titulo,
+  .buscador-pregunta {
+    /*  */
+    background-color: #F8E7DB;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 20px;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .buscador-prueba {
+    /* h2 "Prueba aqui..." y buscador */
+    width: 100%;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buscador {
+    /* Contiene al input y al boton del buscador */
+    background-color: white;
+    min-height: 60px;
+    width: 80%;
+    margin-left: 2%;
+    border: 1px gray solid;
+    /* centrar el elemento hijo */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+  }
+
+  .buscador input {
+    background-color: transparent;
+    height: 60px;
+    width: 85%;
+    padding-left: 5%;
+    /* quitar decoraciones del input */
+    border: 0;
+    outline: none;
+  }
+
+  .buscador button {
+    background-color: rgb(97, 97, 112);
+    height: 58px;
+    width: 60px;
+    padding: 5px;
+    border: none;
+    border-radius: 60px;
+  }
+
+  /* ******* fin index.html seccion-4 buscador *************** */
+}
+
+
+/* Media query para tabletas MD 
+@media only screen and (min-width: 796px) and (max-width:991px) {}*/
+
+
+/* Media query para dispositivos de escritorio LG */
+@media only screen and (min-width: 992px) {
+
+  /* ******* inicio 3) nav | CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN *************** */
+
+  .nav {
+    background-color: #4bb123;
+  }
+
+  .container-fluid {
+    background-color: #4bb123;
+    height: 10vh;
+    width: 100%;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    background-color: antiquewhite;
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  .navbar-collapse,
+  .collapse,
+  .navbar-header {
+    background-color: #4bb123 !important;
+    border: none !important;
+  }
+
+  .navbar-brand span {
+    font-size: 20px;
+  }
+
+  .boton {
+    /* son los enlaces dentro del menú desplegable de bootstrap */
+    font-size: 15px;
+    color: #F1F5F5 !important;
+  }
+
+  /* hamburguesa | home,secciones,buscar,contaco,iniciarsesion */
+  .navbar-nav {
+    font-size: 2rem;
+    border-left: 2px #025FFF solid;
+  }
+
+  /* efecto hover en los enlaces */
+  .navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #FFA202 !important;
+  }
+
+
+  /* ******* inicio index.html seccion-2 presentacion *************** */
+  .seccion-2-presentacion {
+    min-height: 510px;
+    width: 80%;
+
+    border-radius: 10px;
+    margin-left: 10%;
+    background-image: url(../img/presentacion.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* centrar el elemento hijo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cuadro-presentacion {
+    /* este elemento fue centrado desde su padre .seccion-1-presentacion */
+    min-height: 250px;
+    width: 650px;
+    /*  border: 3px rgb(124, 211, 232) solid; */
+    border-radius: 10px;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cuadro-presentacion h2 {
+    /* h2 "Ciudad de Bs As..." */
+    color: #EB8B88;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .nav-marca-logo {
+
+    font-size: 4rem;
+    letter-spacing: 15px;
+    /* centrar el elemento hijo */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seccion-2-presentacion a {
+    background-color: #EB8B88;
+    width: 20px;
+    width: 200px;
+    margin: 5px;
+    color: white;
+    font-size: 2.5rem;
+    padding: 7px 5px;
+    border-radius: 6px;
+    text-align: center;
+    /* quitar decoracion al enlace */
+    text-decoration: none;
+  }
+
+  /* ******* fin index.html seccion-2 presentacion *************** */
+
+
+  /* ******* inicio index.html seccion-3 galeria *************** */
+  .seccion-3-galeria {
+    /* Contiene el titulo y la galeria de productos */
+
+    margin: 60px auto;
+
+    /* debe contener los 660px de la galeria
+    sumarle los 50px del titulo
+    sumarle los 40px de boottom
+    total = 750px */
+    height: 750px;
+    width: 100%;
+    /* background-image: url(../img/galeria.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* centrar a los elemento hijos */
+    display: flex;
+    /* Convertimos al contenedor en flexbox */
+    flex-direction: column;
+    /* on esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .galeria-productos {
+    /* Contiene las 6 tarjetas giratorias 
+        y por eso, esta classe debe estar en las @medias querys*/
+
+    /* son 6 card * 270px (* 2filas = 540px )
+    sumarle 20px*6=120px de bottom
+    total de 660px */
+    height: 660px;
+    width: 90%;
+    bottom: 40px;
+    /* centrar a los elemento hijos */
+    display: flex;
+    /* Convertimos al contenedor en flexbox */
+    flex-direction: row;
+    /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
+    justify-content: space-between;
+    /* Con esto le indicamos que si llega al margen del contenedor que se posicione abajo del otro item */
+    flex-wrap: wrap;
+  }
+
+
+  .producto {
+    /* Contiene la card-frente y card-dorso */
+    height: 270px;
+    width: 30%;
+    margin: 20px auto;
+    /* centrar a los elemento hijos */
+    display: flex;
+    /* Convertimos al contenedor en flexbox */
+    flex-direction: column;
+    align-items: center;
+
+    /* ocultar todo lo que este fuera del div 
+                  overflow: hidden; */
+
+    /* animación 
+                  transform: translate(-50%, -50%); */
+  }
+
+  .card {
+    /* class de card-frente y card-dorso  */
+    position: absolute;
+    height: 270px;
+    /* ancho proporcional a su elemento padre */
+    width: 28%;
+
+    /* animación */
+    /* no permitir elegir si el usuario debe ver la cara posterior */
+    backface-visibility: hidden;
+    /* controlar la velocidad de la animación al cambiar las propiedades de CSS */
+    transition: 1s;
+
+    /* ocultar todo lo que este fuera del div */
+    overflow: hidden;
+  }
+
+  /* ******* fin index.html seccion-3 secciones *************** */
+
+
+  /* ******* inicio index.html seccion-4 buscador *************** */
+  .seccion-4-buscador {
+    height: 500px;
+    width: 100%;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buscador-titulo,
+  .buscador-pregunta {
+    background-color: #F8E7DB;
+    width: 90%;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+  .buscador-prueba {
+    width: 100%;
+    /* centrar a los elementos hijos */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buscador {
+    background-color: white;
+    height: 45px;
+    width: 30%;
+    border: 1px gray solid;
+    margin-left: 8%;
+    /* centrar el elemento hijo */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+  }
+
+  .buscador input {
+    background-color: transparent;
+    height: 45px;
+    width: 85%;
+    padding-left: 10px;
+    /* quitar decoraciones del input */
+    border: 0;
+    outline: none;
+  }
+
+  .buscador button {
+    background-color: rgb(97, 97, 112);
+    height: 43px;
+    width: 45px;
+    padding: 5px;
+    border: none;
+    border-radius: 70px;
+  }
+
+  /* ******* fin index.html seccion-4 buscador *************** */
 }
 
 
 
 
-/* ******* inicio 3) nav | CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN *************** */
-.navbar,
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-  border: none !important;
-  background-color: white;
 
-}
-
-/* enlace de Iniciar Sesion */
-.iniciar-sesion a {
-  background-color: #FFA202 !important;
-  color: white !important;
-}
-
-/* efecto hover en los enlaces */
-.navbar-inverse .navbar-nav>li>a:hover {
-  background-color: #FFA202 !important;
-}
-
-.navbar-header a {
-  padding: 0;
-  font-size: 5rem;
-}
-
-/* ******* fin 3) nav | CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN *************** */
-
-
-
-/* ******* inicio seccion-1 enlaces a redes sociales *************** */
-.seccion-1-iconos {
-  height: 3vh;
-  width: 100%;
-  /* centrar el elemento hijo */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.enlaces-iconos {
-  height: 3vh;
-  width: 30%;
-  margin-top: -20px;
-  /* centrar el elemento hijo */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.enlaces-iconos a:hover {
-  scale: 1.5;
-}
-
-.lista-temas {
-  width: 70%;
-  margin-top: 4vh;
+/* *******    FORMULARIOS    *************** */
+.titulo-de-formulario,
+fieldset {
+  background-color: #EBE233;
   font-size: 20px;
-  list-style: none;
-  text-decoration: none;
-}
-
-.lista-temas li {
-  list-style: none;
-  text-decoration: none;
-}
-
-/* ******* fin seccion-1 enlaces a redes sociales *************** */
-
-
-/* ******* logo "NUMEROS" *************** */
-.span-1 {
-  color: #88E8EB;
-  transition: 1s;
-}
-
-.span-2 {
-  color: #88E8EB;
-  transition: 1s;
-}
-
-.span-3 {
-  color: #F1F5F5;
-  transition: 1s;
-}
-
-.span-4 {
-  color: #EFF749;
-  transition: 1s;
-}
-
-.span-5 {
-  color: #F1F5F5;
-  transition: 1s;
-}
-
-.span-6 {
-  color: #88E8EB;
-  transition: 1s;
-}
-
-.span-7 {
-  color: #88E8EB;
-  transition: 1s;
-}
-
-.span-hover:hover {
-  margin-bottom: 20px;
-}
-
-
-/* ******* inicio seccion-2 presentacion *************** */
-.efecto-cristal {
-  /* efecto cristal del div */
-  background: #fafafa10;
-  backdrop-filter: blur(0.4rem);
-  /* para que el efecto funcione en la mayoría de los navegadores */
-  -webkit-backdrop-filter: blur(0.4rem);
-}
-
-/* ******* fin seccion-2 presentacion *************** */
-
-
-
-
-/* ******* inicio seccion-3 secciones *************** */
-
-
-.card-frente {
-  background-color: rgb(184, 222, 230);
-  box-shadow: 10px 8px 10px rgb(97, 161, 200);
-  border: 2px rgb(97, 161, 200) solid;
-  /* animación */
-  transform: perspective(600px) rotateY(0deg);
-}
-
-img {
-  height: auto;
-  width: 100%;
-}
-
-
-.card-frente-texto h2,
-.card-frente-texto h3 {
-  color: rgb(97, 161, 200);
-  font-size: 45px;
-  text-align: center;
-}
-
-.card-dorso {
-  background-color: #0000FF;
-  box-shadow: 10px 8px 10px rgb(243, 244, 245);
-  position: absolute;
-  color: aliceblue;
-
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
-  /* animación */
-  transform: perspective(600px) rotateY(180deg);
-}
-
-.producto:hover .card-frente {
-  /* animación */
-  transform: perspective(600px) rotateY(180deg);
-}
-
-.producto:hover .card-dorso {
-  /* animación */
-  transform: perspective(600px) rotateY(360deg);
-}
-
-/* ******* fin seccion-3 secciones *************** */
-
-
-/* ******* inicio seccion-4 buscador *************** */
-/* ******* fin seccion-4 buscador *************** */
-
-
-
-
-/* ******* inicio seccion-5 apis datos *************** */
-.seccion-5-apis-datos {
-  margin: 5vh 0;
-  height: 50vh;
-  width: 100%;
-
-  /* centrar a los elemento hijos */
-  display: flex;
-  /* Convertimos al contenedor en flexbox */
-  flex-direction: column;
-  /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
-  justify-content: center;
-  align-items: center;
-}
-
-.datos {
-  height: 40vh;
-  width: 100%;
-  background-color: #EBEFF0;
-  /* centrar a los elemento hijos */
-  display: flex;
-  /* Convertimos al contenedor en flexbox */
-  flex-direction: row;
-  /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
-  justify-content: space-between;
-  align-items: center;
-}
-
-.dato {
-  height: 30vh;
-  width: 50%;
-
-  /* centrar a los elemento hijos */
-  display: flex;
-  /* Convertimos al contenedor en flexbox */
-  flex-direction: column;
-  /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* ******* fin seccion-5 apis datos *************** */
-
-
-
-/* ********* INICIO DE FOOTER ********* */
-footer {
-  height: 200px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer {
-  background-color: #4bb123;
-  height: 200px;
-  width: 100%;
-  position: absolute;
-  margin-bottom: 0;
-  margin-left: 0;
-  padding: 2rem 8%;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
-
-.footer-lista {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  /*     */
-  margin-bottom: 1rem;
-}
-
-.footer-lista-enlace {
-  margin: 1rem 1.5rem;
-  cursor: pointer;
-  /*  quitar la decoracion a la lista */
-  list-style: none;
-}
-
-.footer-enlace {
-  color: white;
-  opacity: 0.6;
-  /*  quitar la decoracion a los enlaces */
-  text-decoration: none !important;
-}
-
-.footer-enlace:hover {
-  opacity: 1;
-  color: white;
-}
-
-.creditos {
-  background-color: black;
-  height: 80px;
-  width: 100%;
-  padding-top: 30px;
-  text-align: center;
-}
-
-.copyright {
-  color: white;
-  opacity: 0.3;
-  text-align: center;
-}
-
-
-/* ********* FIN DE FOOTER ********* */
-
-.flecha-arriba {
-  bottom: 5vh;
-  right: 5vw;
-  /*  */
-  position: fixed;
-
-
+  /* quitar decoraciones del input */
+  border: 0;
+  outline: none;
 }
