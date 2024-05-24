@@ -10,7 +10,7 @@
 
           /* *******    INICIO REGISTRARSE.HTML    *************** */
           .section-registrarse {
-                    height: 170vh;
+                    height: 1100px;
                     width: 96%;
                     margin: 4% 2% auto 2%;
                     display: flex;
@@ -19,7 +19,7 @@
           }
 
           .registrarse-formulario {
-                    height: 160vh;
+                    height: 1000px;
                     width: 100%;
           }
 
@@ -28,9 +28,10 @@
           }
 
           .form-registrarse {
-                    height: 165vh;
+                    height: 800px;
                     width: 90%;
                     margin-left: 5%;
+                    margin-top: 40px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -39,7 +40,7 @@
 
           .registrarse-input input,
           select {
-                    height: 8vh;
+                    height: 40px;
                     width: 80%;
                     text-align: center;
                     /* quitar decoraciones del input */
@@ -47,12 +48,15 @@
                     outline: none;
           }
 
+
+
+          /* div contiene el label y el input */
           .registrarse-input {
                     /* en dispositivos muy pequeños,
           el label se ubicará sobre el input */
-                    height: 18vh;
+                    height: 150px;
                     width: 100%;
-                    margin-top: 20px;
+                    margin-top: 30px;
                     font-size: 2rem;
                     border-bottom: 2px #FFA202 solid;
                     display: flex;
@@ -61,35 +65,21 @@
           }
 
           .registrarse-input label {
-                    height: 8vh;
+                    height: 30px;
                     width: auto;
                     font-size: 2rem;
           }
 
-          .registrarse-condiciones {
-                    height: 8vh;
-                    width: 100%;
-                    padding: 6% 0 4% 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    align-items: end;
-          }
-
-          .registrarse-condiciones input {
-                    height: 8vh;
-                    width: 6%;
-          }
 
           .select-nacionalidad {
-                    height: 8vh;
+                    height: 30px;
                     width: 78%;
           }
 
           .btn-registrarse {
                     background-color: #FFA202;
-                    width: 8vh;
-                    width: 80%;
+                    width: 60px;
+                    width: 200px;
                     margin: 5px;
                     color: white;
                     font-size: 1.8rem;
@@ -100,10 +90,11 @@
                     text-decoration: none;
           }
 
+
           .registrarse-condiciones {
-                    height: 8vh;
+                    height: 30px;
                     width: 100%;
-                    margin-top: 4vh;
+                    margin: 40px auto;
                     padding: 1% 0 4% 0;
                     display: flex;
                     flex-direction: row;
@@ -111,15 +102,20 @@
                     align-items: center;
           }
 
-            /* *******    FIN REGISTRARSE.HTML    *************** */
+          .registrarse-condiciones input {
+                    height: 20px;
+                    width: 20px;
+          }
+
+          /* *******    FIN REGISTRARSE.HTML    *************** */
 }
-        
+
 
 
 /* Media query para teléfonos STANDAR móviles SM XS */
 @media only screen and (min-width: 401px) and (max-width: 767px) {
 
-         
+
           /* *******    INICIO REGISTRARSE.HTML    *************** */
           .section-registrarse {
                     min-height: 1200px;
@@ -179,20 +175,8 @@
                     font-size: 2.5rem;
           }
 
-          .registrarse-condiciones {
-                    height: 6vh;
-                    width: 60% !important;
-                    padding: 6% 0 4% 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    align-items: end;
-          }
 
-          .registrarse-condiciones input {
-                    height: 5vh;
-                    width: 6%;
-          }
+
 
 
           .btn-registrarse {
@@ -210,14 +194,17 @@
           }
 
           .registrarse-condiciones {
-                    height: 8vh;
-                    width: 100%;
-                    margin-top: 4vh;
-                    padding: 1% 0 4% 0;
+                    height: 30px;
+                    width: 310px;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
-                    align-items: center;
+          }
+
+          .registrarse-condiciones input {
+                    background-color: darkgoldenrod;
+                    height: 30px;
+                    width: 20px;
           }
 
           /* *******    FIN REGISTRARSE.HTML    *************** */
@@ -227,10 +214,10 @@
 
 /* Media query para tabletas MD */
 @media only screen and (min-width: 768px) and (max-width:991px) {
-      
+
           /* *******    INICIO REGISTRARSE.HTML    *************** */
           .section-registrarse {
-                    min-height: 740px;
+                    min-height: 780px;
                     width: 96%;
                     margin: 4% 2% auto 2%;
                     display: flex;
@@ -249,7 +236,7 @@
           }
 
           .form-registrarse {
-                    height: 50vh;
+                    height: 550px;
                     width: 90%;
                     padding-top: 50px;
                     margin-left: 5%;
@@ -261,7 +248,7 @@
 
           .registrarse-input input,
           select {
-                    height: 4vh;
+                    height: 32px;
                     width: 64%;
                     text-align: center;
                     /* quitar decoraciones del input */
@@ -270,7 +257,7 @@
           }
 
           .registrarse-input {
-                    height: 5vh;
+                    height: 40px;
                     width: 100%;
                     margin-top: 20px;
                     font-size: 2.5rem;
@@ -281,14 +268,14 @@
           }
 
           .registrarse-input label {
-                    height: 5vh;
+                    height: 20px;
                     width: auto;
                     font-size: 1.8rem;
           }
 
           .registrarse-condiciones {
-                    height: 6vh;
-                    width: 40%;
+                    height: 30px;
+                    width: 150px;
                     padding: 6% 0 4% 0;
                     display: flex;
                     flex-direction: row;
@@ -297,17 +284,17 @@
           }
 
           .registrarse-condiciones input {
-                    height: 5vh;
+                    height: 30px;
                     width: 6%;
           }
 
           .select-nacionalidad {
-                    height: 4vh;
+                    height: 32px;
                     width: 78%;
           }
 
           .input-edad {
-                    height: 4vh;
+                    height: 32px;
                     width: 90%;
           }
 
@@ -332,19 +319,18 @@
           }
 
           .registrarse-condiciones {
-                    height: 8vh;
-                    width: 70%;
-                    margin-top: 4vh;
-                    padding: 1% 0 4% 0;
+                    height: 30px;
+                    width: 300px;
+                    margin-top: 20px;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
-                    align-items: center;
           }
-/* *******    FIN REGISTRARSE.HTML    *************** */
+
+          /* *******    FIN REGISTRARSE.HTML    *************** */
 
 }
-          
+
 
 
 /* Media query para tabletas MD 
@@ -355,9 +341,9 @@
 
           /* *******    INICIO REGISTRARSE.HTML    *************** */
           .section-registrarse {
-                    height: 95vh;
+                    height: 800px;
                     width: 96%;
-                    margin: 4% 2% auto 2%;
+                    margin: 20px 2% auto 2%;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
@@ -365,14 +351,14 @@
           }
 
           .registrarse-formulario {
-                    height: 60vh;
+                    height: 700px;
                     min-width: 350px;
                     width: 100%;
           }
 
           .registrarse-img {
                     background-color: #a4eb88;
-                    height: 90vh;
+                    height: 750px;
                     width: 100%;
 
                     background-image: url(../img/formulario-registrarse.jpg);
@@ -384,9 +370,11 @@
           }
 
           .form-registrarse {
-                    height: 50vh;
+                    height: 580px;
                     width: 90%;
                     margin-left: 5%;
+                    top: 20px;
+                    padding-top: 20px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -395,7 +383,7 @@
 
           .registrarse-input input,
           select {
-                    height: 4vh;
+                    height: 30px;
                     width: 64%;
                     text-align: center;
                     /* quitar decoraciones del input */
@@ -403,10 +391,11 @@
                     outline: none;
           }
 
+          /* div que contiene el label y el imput */
           .registrarse-input {
-                    height: 5vh;
+                    height: 40px;
                     width: 100%;
-                    margin-top: 20px;
+                    margin-top: 10px;
                     font-size: 2.5rem;
                     border-bottom: 2px #FFA202 solid;
                     display: flex;
@@ -415,12 +404,12 @@
           }
 
           .registrarse-input label {
-                    height: 5vh;
+                    height: 18px;
                     width: auto;
           }
 
           .registrarse-condiciones {
-                    height: 6vh;
+                    height: 30px;
                     width: 40%;
                     padding: 6% 0 4% 0;
                     display: flex;
@@ -430,17 +419,19 @@
           }
 
           .registrarse-condiciones input {
-                    height: 5vh;
+                    background-color: blue;
+                    height: 30px;
                     width: 6%;
+                    margin-top: -30px;
           }
 
           .select-nacionalidad {
-                    height: 4vh;
+                    height: 30px;
                     width: 78%;
           }
 
           .input-edad {
-                    height: 4vh;
+                    height: 30px;
                     width: 90% !important;
           }
 
@@ -452,8 +443,8 @@
 
           .btn-registrarse {
                     background-color: #FFA202;
-                    width: 5vh;
-                    width: 30%;
+                    width: 50px;
+                    width: 180px;
                     margin: 5px;
                     color: white;
                     font-size: 2.5rem;
@@ -466,14 +457,12 @@
 
 
           .registrarse-condiciones {
-                    height: 8vh;
-                    width: 60% !important;
-                    margin-top: 4vh !important;
-                    padding: 1% 0 4% 0 !important;
+                    height: 20px;
+                    width: 300px;
+                    margin-top: 20px;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
-                    align-items: center;
           }
 
           /* *******    FIN REGISTRARSE.HTML    *************** */
