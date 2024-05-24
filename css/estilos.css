@@ -89,7 +89,7 @@ body {
 
 /* ******* inicio seccion-1 enlaces a redes sociales *************** */
 .seccion-1-iconos {
-  height: 3vh;
+  height: 50px;
   width: 100%;
   /* centrar el elemento hijo */
   display: flex;
@@ -98,9 +98,8 @@ body {
 }
 
 .enlaces-iconos {
-  height: 3vh;
+  height: 30px;
   width: 30%;
-  margin-top: -20px;
   /* centrar el elemento hijo */
   display: flex;
   justify-content: space-between;
@@ -111,9 +110,12 @@ body {
   scale: 1.5;
 }
 
+
+/* lista de la sección buscador
+"teléfonos útiles", etc.. */
 .lista-temas {
   width: 70%;
-  margin-top: 4vh;
+  margin-top: 35px;
   font-size: 20px;
   list-style: none;
   text-decoration: none;
@@ -235,7 +237,6 @@ img {
 
 /* ******* inicio seccion-4 buscador *************** */
 /* ******* fin seccion-4 buscador *************** */
-
 
 
 
