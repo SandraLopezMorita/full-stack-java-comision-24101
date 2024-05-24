@@ -541,7 +541,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
   .container-fluid {
     background-color: #4bb123;
-    height: 10vh;
+    min-height: 90px;
     width: 100%;
     /* centrar a los elementos hijos */
     display: flex;
@@ -571,7 +571,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
   .nav-marca-logo {
     /* span */
-    font-size: 3vh;
+    font-size: 39px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -582,6 +582,12 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     /* son los enlaces dentro del menú desplegable de bootstrap */
     font-size: 15px;
     color: #F1F5F5 !important;
+  }
+
+  /* hamburguesa | home,secciones,buscar,contaco,iniciarsesion */
+  .navbar-nav {
+    font-size: 2rem;
+    border-left: 2px #025FFF solid;
   }
 
   /* FIN CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
@@ -821,7 +827,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
   .container-fluid {
     background-color: #4bb123;
-    height: 10vh;
+    min-height: 90px;
     width: 100%;
     /* centrar a los elementos hijos */
     display: flex;
