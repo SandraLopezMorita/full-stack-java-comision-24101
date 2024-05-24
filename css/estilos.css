@@ -241,7 +241,6 @@ img {
 
 /* ******* inicio seccion-5 apis datos *************** */
 .seccion-5-apis-datos {
-  background-color: #b19223;
   min-height: 350px;
   width: 100%;
 
@@ -257,7 +256,6 @@ img {
 .datos {
   height: 300px;
   width: 100%;
-  background-color: #EBEFF0;
   /* centrar a los elemento hijos */
   display: flex;
   /* Convertimos al contenedor en flexbox */
