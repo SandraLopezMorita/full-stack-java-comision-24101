@@ -79,10 +79,10 @@
   }
 
 
+  /* boton Registrarse */
   .seccion-2-presentacion a {
-    /* boton Registrarse */
     background-color: #EB8B88;
-    height: 50px;
+    height: 40px;
     width: 60%;
     margin: 5px;
     color: white;
