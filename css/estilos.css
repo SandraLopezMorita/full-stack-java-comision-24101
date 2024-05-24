@@ -239,6 +239,7 @@ img {
 
 
 
+
 /* ******* inicio seccion-5 apis datos *************** */
 .seccion-5-apis-datos {
   min-height: 350px;
@@ -256,6 +257,7 @@ img {
 .datos {
   height: 300px;
   width: 100%;
+  background-color: #EBEFF0;
   /* centrar a los elemento hijos */
   display: flex;
   /* Convertimos al contenedor en flexbox */
@@ -266,7 +268,6 @@ img {
 }
 
 .dato {
-  background-color: #EFF749;
   height: 100px;
   width: 50%;
 
