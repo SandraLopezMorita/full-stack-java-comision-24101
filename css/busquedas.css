@@ -1,0 +1,114 @@
+/************/
+/* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
+@media only screen and (max-width: 400px) {}
+
+/* Media query para teléfonos STANDAR móviles SM XS */
+@media only screen and (min-width: 401px) and (max-width: 795px) {}
+
+/* Media query para tabletas MD */
+@media only screen and (min-width: 796px) and (max-width:991px) {}
+
+/* Media query para dispositivos de escritorio LG */
+@media only screen and (min-width: 992px) {
+
+          .section-busquedas {
+                    height: 1000px;
+                    width: 90%;
+                    margin: 35px 5%;
+
+                    display: flex;
+                    /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
+                    flex-direction: column;
+                    /* los hijos mas directos se posicionarán en una columna */
+                    justify-content: space-around;
+                    /* propiedad necesaria para posicionar en fila los hijos mas directos */
+                    align-items: center;
+          }
+
+          /* div contiene al div nosotros-descripcion y al div nosotros-img */
+          .descripcion {
+                    height: 200px;
+                    width: 90%;
+                    margin-left: 5%;
+                    margin-bottom: 30px;
+
+                    border: 2px #E5E7E9 solid;
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+          }
+
+          .descripcion-texto {
+                    height: 200px;
+                    width: 60%;
+
+                    padding: 20px;
+          }
+
+          .descripcion-img {
+                    height: 200px;
+                    width: 40%;
+                    overflow: hidden;
+          }
+
+          /* nosotros */
+          .nosotros-img {
+                    background-image: url(../img/nosotros1.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                    /* bordes degradados */
+                    border: 10px solid transparent;
+                    /* Creas el borde */
+                    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
+                    /* agregas el gradiente a las esquinas */
+          }
+
+          /* Tu aporte a la comunidad */
+          .aporte-img {
+                    background-image: url(../img/aporte-comunidad1.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                    /* bordes degradados */
+                    border: 10px solid transparent;
+                    /* Creas el borde */
+                    border-image: linear-gradient(to bottom, #16A630 0%, #A6168C 100%) 1;
+                    /* agregas el gradiente a las esquinas */
+          }
+
+          /* ¿Qué son los exploradores? */
+          .exploradores-img {
+                    background-image: url(../img/exploradores1.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                    /* bordes degradados */
+                    border: 10px solid transparent;
+                    /* Creas el borde */
+                    border-image: linear-gradient(to bottom, #1627a6 0%, #cfe1d3 100%) 1;
+                    /* agregas el gradiente a las esquinas */
+          }
+
+          /* ¿Por qué es importante mantener activos a tus exploradores? */
+          .activar-img {
+                    background-image: url(../img/activar-exploradores1.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                    /* bordes degradados */
+                    border: 10px solid transparent;
+                    /* Creas el borde */
+                    border-image: linear-gradient(to bottom, #1616A6 0%, #A6A616 100%) 1;
+                    /* agregas el gradiente a las esquinas */
+          }
+
+}
+
+/************/
