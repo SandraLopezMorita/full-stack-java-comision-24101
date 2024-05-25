@@ -1,9 +1,10 @@
 /* relacionar con otro archivo css */
-@import url(./index.css);
+@import url(index.css);
 @import url(iniciar_sesion.css);
 @import url(registrarse.css);
 @import url(tarjetas_descripcion.css);
 @import url(busquedas.css);
+@import url(exploradores.css);
 
 
 /* en este archivo aparecerán solo los atributos generales para los distintos tamaños de dispositivos */
@@ -32,6 +33,16 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+/* ******* fuente google font 3 *************** */
+.reddit-mono-enlace {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 /* ********************** */
 
@@ -188,17 +199,14 @@ body {
 
 
 .card-frente {
-  background-color: rgb(184, 222, 230);
+  background-color: white;
+
   box-shadow: 10px 8px 10px rgb(97, 161, 200);
   border: 2px rgb(97, 161, 200) solid;
   /* animación */
   transform: perspective(600px) rotateY(0deg);
 }
 
-img {
-  height: auto;
-  width: 100%;
-}
 
 
 .card-frente-texto h2,
@@ -231,6 +239,10 @@ img {
   /* animación */
   transform: perspective(600px) rotateY(360deg);
 }
+
+
+
+
 
 /* ******* fin seccion-3 secciones *************** */
 
