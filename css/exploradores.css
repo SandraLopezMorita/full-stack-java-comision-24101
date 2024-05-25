@@ -1,0 +1,147 @@
+/************/
+/* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
+@media only screen and (max-width: 400px) {}
+
+/* Media query para teléfonos STANDAR móviles SM XS */
+@media only screen and (min-width: 401px) and (max-width: 795px) {}
+
+/* Media query para tabletas MD */
+@media only screen and (min-width: 796px) and (max-width:991px) {}
+
+/* Media query para dispositivos de escritorio LG */
+@media only screen and (min-width: 992px) {
+
+          /* seccion 1 | api exploradores */
+
+          /* sección */
+
+          .section-api-exploradores {
+                    background-color: black;
+                    color: white;
+
+                    height: 1100px;
+                    width: 82%;
+                    margin-left: 9%;
+                    margin-top: 50px;
+                    margin-bottom: 70px;
+
+
+                    border: 2px black solid;
+
+                    /*pone todo en una misma columna */
+                    display: flex;
+                    flex-direction: column;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-between;
+                    text-align: center;
+
+                    overflow: hidden;
+          }
+
+          .api-exploradores-titulo h2 {
+                    color: rgb(70, 103, 211);
+                    font-size: 3.2rem;
+                    margin: 32px auto;
+          }
+
+          .api-exploradores-titulo p {
+                    font-size: 1.5rem;
+          }
+
+          .perfiles-exploradores { 
+                    height: 900px;
+                    width: 100%;
+                    margin-top: 30px;
+                    /*pone todo en una misma linea*/
+                    display: flex;
+                    flex-direction: row;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    align-items: center;
+
+
+          }
+
+          .perfil {
+                    height: 380px;
+                    width: 28%;
+                    padding: 10px auto;
+                    padding-bottom: 25px;
+
+                    border: 2px blueviolet double;
+                    border-radius: 20px;
+                    /*pone todo en una misma columna */
+                    display: flex;
+                    flex-direction: column;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-around;
+                    /* centrar los elementos */
+                    align-items: center;
+                    /* centrar el texto */
+                    text-align: center;
+          }
+
+          .perfil img {
+                    background-color: white;
+                    height: 150px;
+                    width: 150px;
+                    padding: 5px;
+                    border: 2px rgb(47, 32, 208) solid;
+                    border-radius: 130px;
+          }
+
+
+          .perfil-datos {
+                    height: 250px;
+                    margin-top: 20px;
+          }
+
+
+          .perfil a,
+          .perfiles-exploradores li {
+                    color: white;
+                    /* quitando decoraciones a los enlaces */
+                    list-style-type: none;
+                    text-decoration: none;
+
+          }
+
+
+          .api-exploradores-enlaces {
+                    height: 100px;
+                    width: 60%;
+                    margin-left: 20%;
+
+                    /*pone todo en una misma linea*/
+                    display: flex;
+                    flex-direction: row;
+                    /*para que distribuya el enlace en espacio parejo*/
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    align-items: center;
+
+          }
+
+          .enlace-activarlos {
+                    background-color: #4bb123;
+                    height: 38px;
+                    width: 100px;
+                    padding: 8px 10px;
+                    text-align: center;
+                    align-items: center;
+          }
+
+
+          .enlace-seleccionar-otros {
+                    background-color: #FFA202;
+                    height: 38px;
+                    width: 150px;
+                    padding: 8px 10px;
+                    text-align: center;
+                    align-items: center;
+          }
+
+
+
+}
