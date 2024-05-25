@@ -78,7 +78,6 @@
     text-align: center;
   }
 
-
   /* boton Registrarse */
   .seccion-2-presentacion a {
     background-color: #EB8B88;
@@ -630,16 +629,15 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     align-items: center;
   }
 
+  /*h2 Ciudad de Bs As...*/
   .cuadro-presentacion h2 {
-    /*h2 Ciudad de Bs As...*/
     color: #EB8B88;
     font-size: 3.5rem;
     text-align: center;
   }
 
-
+  /* boton Registrarse */
   .seccion-2-presentacion a {
-    /* boton Registrarse */
     background-color: #EB8B88;
     height: 40px;
     width: 200px !important;
@@ -652,6 +650,9 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     /* quitar decoracion al enlace */
     text-decoration: none;
   }
+
+
+
 
   /* ******* fin index.html seccion-2 presentacion *************** */
 
@@ -825,6 +826,19 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     background-color: #4bb123;
   }
 
+
+  /* "N U M E R O S " */
+  .nav-marca-logo {
+    font-size: 4rem;
+    letter-spacing: 15px;
+    /* centrar el elemento hijo */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+
   .container-fluid {
     background-color: #4bb123;
     min-height: 90px;
@@ -877,22 +891,26 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     min-height: 510px;
     width: 80%;
 
+    padding: 20px;
+
     border-radius: 10px;
     margin-left: 10%;
     background-image: url(../img/presentacion.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* centrar el elemento hijo */
+    /* centrar a los elementos hijos */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
   }
 
+  /* cuadro traslúcido que contiene al h2 central */
   .cuadro-presentacion {
     /* este elemento fue centrado desde su padre .seccion-1-presentacion */
-    min-height: 250px;
-    width: 650px;
+    min-height: 150px;
+    width: 90%;
     /*  border: 3px rgb(124, 211, 232) solid; */
     border-radius: 10px;
     /* centrar a los elementos hijos */
@@ -902,33 +920,89 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     align-items: center;
   }
 
+  /* h2 "Ciudad de Bs As..." */
   .cuadro-presentacion h2 {
-    /* h2 "Ciudad de Bs As..." */
     color: #EB8B88;
     font-size: 5rem;
     text-align: center;
   }
 
-  .nav-marca-logo {
+  /* div que contiene el parrafo y botón "Registrarse" */
+  .registrate {
+    background-color: white;
+    height: 55px;
+    width: 90% !important;
 
-    font-size: 4rem;
-    letter-spacing: 15px;
-    /* centrar el elemento hijo */
+    padding-left: 25px;
+    padding-right: 25px;
+
+    font-size: 2rem;
+    border: 2px #2954df double;
+    border-radius: 20px;
+    /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
+    /* box-shadow: inset 0px 0px 20px #2954df,*/
+    /* difuminado interno */
+    /*  0px 0px 20px #2954df; */
+    /* difuminado externo */
+
+
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  /* div que contiene el parrafo y botón "Conexión a API" */
+  .conexion-api-exploradores {
+    background-color: black;
+    color: rgb(70, 103, 211);
+    height: 55px;
+    width: 90% !important;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    font-size: 2rem;
+    border: 2px blueviolet double;
+    border-radius: 20px;
+    /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
+    /*  box-shadow: inset 0px 0px 20px blueviolet, */
+    /* difuminado interno */
+    /*  0px 0px 20px blueviolet; */
+    /* difuminado externo */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 
-  .seccion-2-presentacion a {
-    background-color: #EB8B88;
-    width: 20px;
-    width: 200px;
-    margin: 5px;
+  /* boton enlace "Registrate" */
+  .registrate a {
+    background-color: #2954df;
     color: white;
-    font-size: 2.5rem;
-    padding: 7px 5px;
+    height: 35px;
+    width: 200px;
+
+    font-size: 2rem;
     border-radius: 6px;
+
+    text-align: center;
+    /* quitar decoracion al enlace */
+    text-decoration: none;
+  }
+
+  /* boton enlace "Conexión a API" */
+  .conexion-api-exploradores a {
+    color: white;
+    height: 35px;
+    width: 200px;
+
+    font-size: 2rem;
+    border: 2px white double;
+    border-radius: 6px;
+
     text-align: center;
     /* quitar decoracion al enlace */
     text-decoration: none;
@@ -1103,4 +1177,77 @@ fieldset {
   /* quitar decoraciones del input */
   border: 0;
   outline: none;
+}
+
+/* TARJETAS */
+.producto-transporte-img {
+  height: 100%;
+  width: 100%;
+
+  margin-top: -20px;
+
+  background-image: url(../img/card-transporte1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.producto-educacion-img {
+  height: 100%;
+  width: 100%;
+
+  margin-top: -20px;
+
+  background-image: url(../img/card-educacion1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.producto-salud-img {
+  height: 100%;
+  width: 100%;
+
+  margin-top: -20px;
+
+  background-image: url(../img/card-salud1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.producto-seguridad-img {
+  height: 100%;
+  width: 100%;
+
+  margin-top: -20px;
+
+  background-image: url(../img/card-seguridad1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.producto-comunidad-img {
+  height: 100%;
+  width: 100%;
+
+  margin-top: -20px;
+
+  background-image: url(../img/card-comunidad1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.producto-redes-img {
+  height: 100%;
+  width: 100%;
+
+  margin-top: -20px;
+
+  background-image: url(../img/card-redes1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
