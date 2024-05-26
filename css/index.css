@@ -10,12 +10,15 @@
   /* INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
   .navbar-header {
     background-color: #4bb123;
+    height: 65px;
   }
 
+  /* "N U M E R O S " */
   .nav-marca-logo {
-    font-size: 3rem !important;
-    letter-spacing: 5px;
-    margin-top: 5px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-left: 15px;
   }
 
   .boton {
@@ -54,14 +57,16 @@
     background-repeat: no-repeat;
     /* centrar el elemento hijo */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
   }
 
+  /* cuadro traslúcido que contiene al h2 central */
   .cuadro-presentacion {
     /* este elemento fue centrado desde su padre .seccion-1-presentacion */
-    height: 300px;
-    width: 80%;
+    height: auto;
+    width: 90%;
     /*  border: 3px rgb(124, 211, 232) solid; */
     border-radius: 10px;
     /* centrar a los elementos hijos */
@@ -78,20 +83,97 @@
     text-align: center;
   }
 
-  /* boton Registrarse */
-  .seccion-2-presentacion a {
-    background-color: #EB8B88;
-    height: 40px;
-    width: 60%;
-    margin: 5px;
-    color: white;
+
+
+  /* div que contiene el parrafo y botón "Registrarse" */
+  .registrate {
+    background-color: white;
+    height: auto;
+    width: 90% !important;
+
+    padding: 10px 20px;
+
     font-size: 1.8rem;
-    padding: 7px 5px;
+    border: 2px #2954df double;
+    border-radius: 20px;
+    /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
+    /* box-shadow: inset 0px 0px 20px #2954df,*/
+    /* difuminado interno */
+    /*  0px 0px 20px #2954df; */
+    /* difuminado externo */
+
+    /* en dispositivos pequeños, este div
+debe acomodar sus elementos en una columna */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* en dispositivos pequeños, 
+el texto aparecerá justificado */
+    text-align: justify;
+  }
+
+  /* div que contiene el parrafo y botón "Conexión API" */
+  .conexion-api-exploradores {
+    background-color: black;
+    color: rgb(70, 103, 211);
+    height: auto;
+    width: 90% !important;
+
+    padding: 10px 20px;
+
+    font-size: 1.8rem;
+    border: 2px blueviolet double;
+    border-radius: 20px;
+    /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
+    /*  box-shadow: inset 0px 0px 20px blueviolet, */
+    /* difuminado interno */
+    /*  0px 0px 20px blueviolet; */
+    /* difuminado externo */
+
+    /* en dispositivos pequeños, este div
+debe acomodar sus elementos en una columna */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* en dispositivos pequeños, 
+el texto aparecerá justificado */
+    text-align: justify;
+  }
+
+  /* boton enlace "Registrate" */
+  .registrate a {
+    background-color: #2954df;
+    color: white;
+    height: auto;
+    width: 160px;
+
+    font-size: 2rem;
     border-radius: 6px;
+
     text-align: center;
     /* quitar decoracion al enlace */
     text-decoration: none;
   }
+
+  /* boton enlace "Conexión API" */
+  .conexion-api-exploradores a {
+    color: white;
+    height: auto;
+    width: 180px;
+
+    font-size: 2rem;
+    border: 2px white double;
+    border-radius: 6px;
+
+    text-align: center;
+    /* quitar decoracion al enlace */
+    text-decoration: none;
+  }
+
 
   /* ******* fin index.html seccion-2 presentacion *************** */
 
@@ -175,6 +257,51 @@ transform: translate(-50%, -50%); */
     color: black;
   }
 
+
+  /* En dispositivos pequeños las img de las tarjetas
+ se ubican en los div card-frente */
+  .card-frente-transporte {
+    background-image: url(../img/card-transporte1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-frente-salud {
+    background-image: url(../img/card-salud1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-frente-educacion {
+    background-image: url(../img/card-educacion1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-frente-seguridad {
+    background-image: url(../img/card-seguridad1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-frente-comunidad {
+    background-image: url(../img/card-comunidad1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-frente-redes {
+    background-image: url(../img/card-redes1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   /* ******* fin index.html seccion-3 galeria *************** */
 
 
@@ -255,6 +382,8 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
   }
 
   /* ******* fin index.html seccion-4 buscador *************** */
+
+
 }
 
 
@@ -266,8 +395,10 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
   /* INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
   .navbar-header {
     background-color: #4bb123;
+    height: 70px;
   }
 
+  /* "N U M E R O S " */
   .nav-marca-logo {
     font-size: 3.5rem;
     letter-spacing: 20px;
@@ -314,14 +445,16 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     background-repeat: no-repeat;
     /* centrar el elemento hijo */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
   }
 
+  /* cuadro traslúcido que contiene al h2 central */
   .cuadro-presentacion {
     /* este elemento fue centrado desde su padre .seccion-1-presentacion */
-    height: 200px;
-    width: 80%;
+    height: auto;
+    width: 90%;
     /*  border: 3px rgb(124, 211, 232) solid; */
     border-radius: 10px;
     /* centrar a los elementos hijos */
@@ -339,16 +472,90 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
   }
 
 
-  .seccion-2-presentacion a {
-    /* boton Registrarse */
-    background-color: #EB8B88;
-    width: 22px;
-    width: 40%;
-    margin: 5px;
+  /* div que contiene el parrafo y botón "Registrarse" */
+  .registrate {
+    background-color: white;
+    height: auto;
+    width: 90% !important;
+
+    padding: 10px 20px;
+
+    font-size: 1.8rem;
+    border: 2px #2954df double;
+    border-radius: 20px;
+    /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
+    /* box-shadow: inset 0px 0px 20px #2954df,*/
+    /* difuminado interno */
+    /*  0px 0px 20px #2954df; */
+    /* difuminado externo */
+
+    /* en dispositivos pequeños, este div
+debe acomodar sus elementos en una columna */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* en dispositivos pequeños, 
+el texto aparecerá justificado */
+    text-align: justify;
+  }
+
+  /* div que contiene el parrafo y botón "Conexión API" */
+  .conexion-api-exploradores {
+    background-color: black;
+    color: rgb(70, 103, 211);
+    height: auto;
+    width: 90% !important;
+
+    padding: 10px 20px;
+
+    font-size: 1.8rem;
+    border: 2px blueviolet double;
+    border-radius: 20px;
+    /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
+    /*  box-shadow: inset 0px 0px 20px blueviolet, */
+    /* difuminado interno */
+    /*  0px 0px 20px blueviolet; */
+    /* difuminado externo */
+
+    /* en dispositivos pequeños, este div
+debe acomodar sus elementos en una columna */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* en dispositivos pequeños, 
+el texto aparecerá justificado */
+    text-align: justify;
+  }
+
+  /* boton enlace "Registrate" */
+  .registrate a {
+    background-color: #2954df;
     color: white;
+    height: auto;
+    width: 160px;
+
     font-size: 2rem;
-    padding: 7px 5px;
     border-radius: 6px;
+
+    text-align: center;
+    /* quitar decoracion al enlace */
+    text-decoration: none;
+  }
+
+  /* boton enlace "Conexión API" */
+  .conexion-api-exploradores a {
+    color: white;
+    height: auto;
+    width: 180px;
+
+    font-size: 2rem;
+    border: 2px white double;
+    border-radius: 6px;
+
     text-align: center;
     /* quitar decoracion al enlace */
     text-decoration: none;
@@ -432,6 +639,50 @@ transform: translate(-50%, -50%); */
     /* h2 y h3 de las tarjetas */
     font-size: 25px;
     color: black;
+  }
+
+  /* En dispositivos pequeños las img de las tarjetas
+ se ubican en los div card-frente */
+  .card-frente-transporte {
+    background-image: url(../img/card-transporte1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-frente-salud {
+    background-image: url(../img/card-salud1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-frente-educacion {
+    background-image: url(../img/card-educacion1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-frente-seguridad {
+    background-image: url(../img/card-seguridad1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-frente-comunidad {
+    background-image: url(../img/card-comunidad1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-frente-redes {
+    background-image: url(../img/card-redes1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   /* ******* fin index.html seccion-3 galeria *************** */
@@ -568,6 +819,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     background-color: #FFA202 !important;
   }
 
+  /* "N U M E R O S " */
   .nav-marca-logo {
     /* span */
     font-size: 39px;
@@ -612,13 +864,15 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     background-repeat: no-repeat;
     /* centrar el elemento hijo */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
   }
 
+  /* cuadro traslúcido que contiene al h2 central */
   .cuadro-presentacion {
     /* este elemento fue centrado desde su padre .seccion-1-presentacion */
-    height: 200px;
+    height: auto;
     width: 90%;
     /*  border: 3px rgb(124, 211, 232) solid; */
     border-radius: 10px;
@@ -636,23 +890,94 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     text-align: center;
   }
 
-  /* boton Registrarse */
-  .seccion-2-presentacion a {
-    background-color: #EB8B88;
-    height: 40px;
-    width: 200px !important;
-    margin: 5px;
+  /* div que contiene el parrafo y botón "Registrarse" */
+  .registrate {
+    background-color: white;
+    height: 75px;
+    width: 90% !important;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    font-size: 2rem;
+    border: 2px #2954df double;
+    border-radius: 20px;
+    /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
+    /* box-shadow: inset 0px 0px 20px #2954df,*/
+    /* difuminado interno */
+    /*  0px 0px 20px #2954df; */
+    /* difuminado externo */
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* en dispositivos mediano y grandes, 
+    el texto de este div, aparecerá alineado al margen izquierdo */
+    text-align: left;
+
+  }
+
+  /* div que contiene el parrafo y botón "Conexión API" */
+  .conexion-api-exploradores {
+    background-color: black;
+    color: rgb(70, 103, 211);
+    height: 75px;
+    width: 90% !important;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    font-size: 2rem;
+    border: 2px blueviolet double;
+    border-radius: 20px;
+    /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
+    /*  box-shadow: inset 0px 0px 20px blueviolet, */
+    /* difuminado interno */
+    /*  0px 0px 20px blueviolet; */
+    /* difuminado externo */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* en dispositivos mediano y grandes, 
+    el texto de este div, aparecerá alineado al margen izquierdo */
+    text-align: left;
+  }
+
+  /* boton enlace "Registrate" */
+  .registrate a {
+    background-color: #2954df;
     color: white;
-    font-size: 1.8rem;
-    padding: 7px 5px;
+    height: auto;
+    width: 160px;
+
+    font-size: 2rem;
     border-radius: 6px;
+
     text-align: center;
     /* quitar decoracion al enlace */
     text-decoration: none;
   }
 
+  /* boton enlace "Conexión API" */
+  .conexion-api-exploradores a {
+    color: white;
+    height: auto;
+    width: 180px;
 
+    font-size: 2rem;
+    border: 2px white double;
+    border-radius: 6px;
 
+    text-align: center;
+    /* quitar decoracion al enlace */
+    text-decoration: none;
+  }
 
   /* ******* fin index.html seccion-2 presentacion *************** */
 
@@ -727,6 +1052,47 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
     /* ocultar todo lo que este fuera del div */
     overflow: hidden;
+  }
+
+  /* En dispositivos medianos y grandes, las img de las tarjetas
+ se ubican en los div producto-x-img */
+  /* TARJETAS */
+  .producto-transporte-img,
+  .producto-salud-img,
+  .producto-educacion-img,
+  .producto-seguridad-img,
+  .producto-comunidad-img,
+  .producto-redes-img {
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .producto-transporte-img {
+    background-image: url(../img/card-transporte1.jpg);
+  }
+
+  .producto-educacion-img {
+    background-image: url(../img/card-educacion1.jpg);
+  }
+
+  .producto-salud-img {
+    background-image: url(../img/card-salud1.jpg);
+  }
+
+  .producto-seguridad-img {
+    background-image: url(../img/card-seguridad1.jpg);
+  }
+
+  .producto-comunidad-img {
+    background-image: url(../img/card-comunidad1.jpg);
+  }
+
+  .producto-redes-img {
+    background-image: url(../img/card-redes1.jpg);
   }
 
   /* ******* fin index.html seccion-3 galeria *************** */
@@ -909,7 +1275,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
   /* cuadro traslúcido que contiene al h2 central */
   .cuadro-presentacion {
     /* este elemento fue centrado desde su padre .seccion-1-presentacion */
-    min-height: 150px;
+    min-height: auto;
     width: 90%;
     /*  border: 3px rgb(124, 211, 232) solid; */
     border-radius: 10px;
@@ -930,11 +1296,10 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
   /* div que contiene el parrafo y botón "Registrarse" */
   .registrate {
     background-color: white;
-    height: 55px;
-    width: 90% !important;
+    height: auto;
+    width: 90%;
 
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 8px 20px;
 
     font-size: 2rem;
     border: 2px #2954df double;
@@ -953,15 +1318,14 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
   }
 
-  /* div que contiene el parrafo y botón "Conexión a API" */
+  /* div que contiene el parrafo y botón "Conexión API" */
   .conexion-api-exploradores {
     background-color: black;
     color: rgb(70, 103, 211);
-    height: 55px;
-    width: 90% !important;
+    height: auto;
+    width: 90%;
 
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 8px 20px;
 
     font-size: 2rem;
     border: 2px blueviolet double;
@@ -982,27 +1346,30 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
   .registrate a {
     background-color: #2954df;
     color: white;
-    height: 35px;
+    height: auto;
     width: 200px;
 
+    margin-left: 10px;
     font-size: 2rem;
+    border: 2px #2954df double;
     border-radius: 6px;
-
+    padding: 5px;
     text-align: center;
     /* quitar decoracion al enlace */
     text-decoration: none;
   }
 
-  /* boton enlace "Conexión a API" */
+  /* boton enlace "Conexión API" */
   .conexion-api-exploradores a {
     color: white;
-    height: 35px;
-    width: 200px;
+    height: auto;
+    width: 220px;
 
+    margin: 10px;
     font-size: 2rem;
     border: 2px white double;
     border-radius: 6px;
-
+    padding: 5px;
     text-align: center;
     /* quitar decoracion al enlace */
     text-decoration: none;
@@ -1093,6 +1460,47 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     overflow: hidden;
   }
 
+  /* En dispositivos medianos y grandes, las img de las tarjetas
+ se ubican en los div producto-x-img */
+  /* TARJETAS */
+  .producto-transporte-img,
+  .producto-salud-img,
+  .producto-educacion-img,
+  .producto-seguridad-img,
+  .producto-comunidad-img,
+  .producto-redes-img {
+    height: 100%;
+    width: 100%;
+    margin-top: -20px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .producto-transporte-img {
+    background-image: url(../img/card-transporte1.jpg);
+  }
+
+  .producto-educacion-img {
+    background-image: url(../img/card-educacion1.jpg);
+  }
+
+  .producto-salud-img {
+    background-image: url(../img/card-salud1.jpg);
+  }
+
+  .producto-seguridad-img {
+    background-image: url(../img/card-seguridad1.jpg);
+  }
+
+  .producto-comunidad-img {
+    background-image: url(../img/card-comunidad1.jpg);
+  }
+
+  .producto-redes-img {
+    background-image: url(../img/card-redes1.jpg);
+  }
+
   /* ******* fin index.html seccion-3 secciones *************** */
 
 
@@ -1177,77 +1585,4 @@ fieldset {
   /* quitar decoraciones del input */
   border: 0;
   outline: none;
-}
-
-/* TARJETAS */
-.producto-transporte-img {
-  height: 100%;
-  width: 100%;
-
-  margin-top: -20px;
-
-  background-image: url(../img/card-transporte1.jpg);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.producto-educacion-img {
-  height: 100%;
-  width: 100%;
-
-  margin-top: -20px;
-
-  background-image: url(../img/card-educacion1.jpg);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.producto-salud-img {
-  height: 100%;
-  width: 100%;
-
-  margin-top: -20px;
-
-  background-image: url(../img/card-salud1.jpg);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.producto-seguridad-img {
-  height: 100%;
-  width: 100%;
-
-  margin-top: -20px;
-
-  background-image: url(../img/card-seguridad1.jpg);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.producto-comunidad-img {
-  height: 100%;
-  width: 100%;
-
-  margin-top: -20px;
-
-  background-image: url(../img/card-comunidad1.jpg);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.producto-redes-img {
-  height: 100%;
-  width: 100%;
-
-  margin-top: -20px;
-
-  background-image: url(../img/card-redes1.jpg);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+} 
