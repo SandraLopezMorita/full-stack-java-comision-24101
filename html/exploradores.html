@@ -88,30 +88,42 @@ importados desde la API
           <!-- ********************************************************************** -->
      </header>
 
-
      <!-- 4) main | contiene a las tres secciones -->
      <main>
-          <!-- 4) main | contiene a las tres secciones -->
-          <main>
-               <!--  seccion 1 | api exploradores -->
+          <!--  seccion 1 | api exploradores -->
 
-               <section class="section-api-exploradores" id="section-api-exploradores">
+          <section class="section-api-exploradores">
+
+               <!--  Este div permanecerá oculto hasta que sea activado 
+                    desde la  function Fila_perfiles(obj) en .js  
+               deberá aparecer junto con la respuesta de la API -->
+               <div class="contenedor-titulo-desactivado" id="contenedor-titulo-desactivado">
+                    <div class="api-exploradores-titulo">
+                         <h2>Estos son tus exploradores y ya están listos para ser activados.
+                         </h2>
+                         <p>Puedes hacer que exploren y acumulen datos de recorridos en tiempo
+                              real de las distintas secciones de la ciudad.</p>
+                         <p>Los datos que tus exploradores obtengan podrán ser consultados por ti en cualquier
+                              momento
+                              desde
+                              cualquier dispositivo electrónico.</p>
+                    </div>
+                    <div class="api-exploradores-enlaces">
+                         <a class="enlace-activarlos boton" href="../html/iniciar_sesion.html">Activarlos!</a>
+                         <button class="enlace-seleccionar-otros boton" href=" "
+                              onclick="invocarApiPerfiles()">Seleccionar
+                              otros</button>
+                    </div>
+               </div>
+               <!--  Aquí aparecerán las respuestas de la API -->
+               <div class="div-api-exploradores" id="div-api-exploradores">
+                    <!-- Este div será reemplazado cuando las promesas se cumplan-->
                     <div class="api-exploradores-titulo">
                          <p>Cargando perfiles...</p>
                     </div>
+               </div>
 
-                    <!--  
-                                        <div class="api-exploradores-enlaces">
-                                                  <button class="enlace-activarlos boton" href="" onclick="invocarApiPerfiles()">Activarlos!</button>
-                                                  <button class="enlace-seleccionar-otros boton"
-                                                  href=" " onclick="invocarApiPerfiles()" >Seleccionar otros</a>
-                                        </div>   
--->
-               </section>
-
-
-
-          </main>
+          </section>
 
      </main>
 
@@ -163,4 +175,4 @@ importados desde la API
      <script src="../js/fech_apis.js"></script>
 </body>
 
-</html>
+</html> 
