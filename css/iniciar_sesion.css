@@ -10,13 +10,13 @@
 
           /* *******    INICIO INICIAR_SESION.HTML    *************** */
           .section-iniciar-sesion {
-                    background-color: #EBE233;
-                    height: 490px;
+                    height: 530px;
                     width: 92%;
                     margin: 20px 4% auto auto;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     justify-content: space-between;
+                    align-items: center;
           }
 
           .iniciar-sesion-formulario {
@@ -29,8 +29,7 @@
           }
 
           .form-iniciar-sesion {
-                    background-color: brown;
-                    height: 350px;
+                    height: 370px;
                     width: 90%;
                     margin-left: 5%;
                     display: flex;
@@ -40,19 +39,20 @@
           }
 
           .iniciar-sesion-input {
-                    height: 30px;
+                    height: 70px;
                     width: 90%;
                     margin-top: 20px;
                     font-size: 2.5rem;
                     border-bottom: 2px #333CEB solid;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
+                    justify-content: space-around;
                     align-items: center;
           }
 
           .iniciar-sesion-input input {
-                    height: 25px;
-                    width: 64%;
+                    height: 35px;
+                    width: 100%;
                     text-align: center;
                     /* quitar decoraciones del input */
                     border: 0;
@@ -60,9 +60,9 @@
           }
 
           .iniciar-sesion-input label {
-                    height: 15px;
+                    height: 30px;
                     width: auto;
-                    font-size: 15px;
+                    font-size: 2.2rem;
           }
 
           .btn-iniciar-sesion {
@@ -362,3 +362,10 @@
 
           /* *******    FIN INICIAR_SESION.HTML    *************** */
 }
+
+.error {
+          background-color: yellow;
+          color: brown;
+          height: 20px;
+          width: 20px;
+} 
