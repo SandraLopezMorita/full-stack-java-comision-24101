@@ -105,16 +105,19 @@
                     </h2>
                     <!-- si yo no le agrego nada a la etiqueta form, por defecto, viaja por el metodo GET
                          (la información que viaje será visible en la url)  -->
-                    <form class="form-iniciar-sesion" action="">
+                    <form class="form-iniciar-sesion" id="form-iniciar-sesion" action="" method="get">
                          <div class="iniciar-sesion-input">
                               <label for="usuario">Email</label>
-                              <input class="" type="text" id="usuario" required>
+                              <input class="" type="email" id="userEmail" name="userEmail" value="">
+                              <div class="error-text"></div>
                          </div>
                          <div class="iniciar-sesion-input">
                               <label for="contrasenia">Contraseña</label>
-                              <input type="password" id="contrasenia" required>
+                              <input type="password" id="contrasenia" name="contrasenia" value="">
+                              <div class="error-text"></div>
                          </div>
-                         <button class="btn-iniciar-sesion">Iniciar Sesion</button>
+
+                         <input class="btn-iniciar-sesion" type="submit" value="Iniciar Sesión">
                          <a class="seccion-titulo" href="./registrarse.html">Crear cuenta</a>
                     </form>
 
@@ -165,6 +168,10 @@
      <div class="creditos">
           <span class="copyright">&copy;copyright Mayo 2024 @</span>
      </div>
+
+     <!-- 11) script |  -->
+     <!-- relacionar archivo html con js -->
+     <script src="../js/validacion_formulario.js"></script>
 
 
 </body>
