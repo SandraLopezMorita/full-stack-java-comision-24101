@@ -1574,9 +1574,11 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 }
 
 
+
 /* CARRUSEL DE IMG */
 .section-carrusel {
-  background-color: #F2F4F4;
+  background-color: #d8f4fa;
+
   height: 290px;
   width: 100%;
 
@@ -1605,7 +1607,7 @@ deben ir ubicados sobre la misma linea horizontal */
   justify-content: space-between;
 
   /*animacion*/
-  animation: animacion 35s linear infinite;
+  animation: animacion 50s linear infinite;
   -webkit-animation: animacion 35s linear infinite;
   overflow-x: hidden;
 
@@ -1619,8 +1621,8 @@ deben ir ubicados sobre la misma linea horizontal */
 
   padding: 4px;
 
-  box-shadow: 10px 8px 10px rgb(94, 101, 105);
-  border: 2px rgb(94, 101, 105) solid;
+  box-shadow: 10px 8px 10px #EDFA54;
+  border: 2px #EDFA54 solid;
   border-radius: 5px;
 
   align-items: center;
@@ -1630,7 +1632,6 @@ deben ir ubicados sobre la misma linea horizontal */
 .carrusel-img-descripcion img {
   height: 180px;
   width: 100%;
-  border: 2px var(--tonoG1) solid;
 }
 
 .carrusel-img-descripcion p {
@@ -1651,4 +1652,3 @@ deben ir ubicados sobre la misma linea horizontal */
     transform: translateX(calc(-500px*2));
   }
 } 
-
