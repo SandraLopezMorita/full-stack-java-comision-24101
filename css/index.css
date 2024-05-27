@@ -1599,7 +1599,7 @@ por eso, los elementos hijos de este div,
 deben ir ubicados sobre la misma linea horizontal */
 .carrusel-contenedor {
   height: 310px;
-  width: 3000px;
+  width: 2500px;
   /*pone todo en una misma linea*/
   display: flex;
   flex-direction: row;
