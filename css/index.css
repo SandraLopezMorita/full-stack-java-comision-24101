@@ -1577,7 +1577,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 /* CARRUSEL DE IMG */
 .section-carrusel {
   background-color: #F2F4F4;
-  height: 270px;
+  height: 290px;
   width: 100%;
 
   margin-top: 50px;
@@ -1597,7 +1597,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 por eso, los elementos hijos de este div,
 deben ir ubicados sobre la misma linea horizontal */
 .carrusel-contenedor {
-  height: 250px;
+  height: 270px;
   width: 3000px;
   /*pone todo en una misma linea*/
   display: flex;
@@ -1614,11 +1614,16 @@ deben ir ubicados sobre la misma linea horizontal */
 
 /* cada div, contiene una img y un parrafo */
 .carrusel-img-descripcion {
-  height: 235px;
+  background-color: white;
+  height: 238px;
   width: 180px;
+
+  padding: 4px; 
 
   box-shadow: 10px 8px 10px rgb(94, 101, 105);
   border: 2px rgb(94, 101, 105) solid;
+border-radius: 5px;
+
   align-items: center;
   text-align: center;
 }
