@@ -1574,16 +1574,26 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 }
 
 
+
 /* CARRUSEL DE IMG */
 .section-carrusel {
   background-color: #4223b1;
 
-  height: 310px;
+  height: 400px;
   width: 100%;
 
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 70px;
-  padding: 20px;
+  padding: 10px;
+
+  display: block;
+  /*  */
+
+  /* los hijos mas directos se posicionarán en una columna */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 
   background-position: left;
   background-size: cover;
@@ -1592,6 +1602,10 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
   overflow: hidden;
 }
 
+.section-carrusel h2 {
+  color: white;
+  margin: 10px auto;
+}
 
 /* contiene a los 8 div que integran el carrusel,
 por eso, los elementos hijos de este div,
@@ -1602,6 +1616,8 @@ deben ir ubicados sobre la misma linea horizontal */
   =  2560px*/
   width: calc(320px*8);
 
+
+  margin-top: 30px;
   /*pone todo en una misma linea*/
   display: flex;
   flex-direction: row;
@@ -1609,20 +1625,21 @@ deben ir ubicados sobre la misma linea horizontal */
   justify-content: space-between;
 
   /*animacion*/
-  animation: animacion 5s linear infinite;
+  animation: animacion 35s linear infinite;
   -webkit-animation: animacion 35s linear infinite;
   overflow-x: hidden;
 
 }
 
 /* cada div, contiene una img y un parrafo */
-
 .carrusel-img-descripcion {
   background-color: white;
   height: 270px;
-  width: 250;
+  width: 250px;
   margin-left: 50px !important;
   padding: 8px;
+
+  display: block;
 
   border-radius: 12px;
   box-shadow: 10px 8px 10px rgb(63, 77, 85) solid;
