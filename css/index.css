@@ -1599,7 +1599,6 @@ deben ir ubicados sobre la misma linea horizontal */
 .carrusel-contenedor {
   height: 250px;
   width: 3000px;
-  margin-top: 30px;
   /*pone todo en una misma linea*/
   display: flex;
   flex-direction: row;
@@ -1615,12 +1614,11 @@ deben ir ubicados sobre la misma linea horizontal */
 
 /* cada div, contiene una img y un parrafo */
 .carrusel-img-descripcion {
-  height: 220px;
-  width: 250px;
+  height: 235px;
+  width: 180px;
 
   box-shadow: 10px 8px 10px rgb(94, 101, 105);
   border: 2px rgb(94, 101, 105) solid;
-
   align-items: center;
   text-align: center;
 }
