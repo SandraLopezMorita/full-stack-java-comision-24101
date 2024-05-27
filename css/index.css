@@ -1609,7 +1609,7 @@ deben ir ubicados sobre la misma linea horizontal */
   justify-content: space-between;
 
   /*animacion*/
-  animation: animacion 35s linear infinite;
+  animation: animacion 5s linear infinite;
   -webkit-animation: animacion 35s linear infinite;
   overflow-x: hidden;
 
