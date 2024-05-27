@@ -1598,6 +1598,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 por eso, los elementos hijos de este div,
 deben ir ubicados sobre la misma linea horizontal */
 .carrusel-contenedor {
+  background-color: #4223b1;
   height: 310px;
   width: 2500px;
   /*pone todo en una misma linea*/
