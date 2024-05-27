@@ -1622,7 +1622,7 @@ deben ir ubicados sobre la misma linea horizontal */
   background-color: white;
   height: 270px;
   width: 250;
-
+  margin-left: 50px !important;
   padding: 8px;
 
   border-radius: 12px;
