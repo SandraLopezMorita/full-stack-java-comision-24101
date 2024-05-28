@@ -42,6 +42,12 @@ body {
   font-style: normal;
 }
 
+/* ******* fuente google font 4 *************** */
+.alkalami-regular {
+  font-family: "Alkalami", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 /* ********************** */
@@ -222,6 +228,12 @@ body {
   flex-direction: column;
   text-align: center;
 
+/* el enlace del dorso de la card "ver mas..." */
+.etiqueta-enlace a{
+  color: white;
+}
+
+  
   /* animación */
   transform: perspective(600px) rotateY(180deg);
 }
