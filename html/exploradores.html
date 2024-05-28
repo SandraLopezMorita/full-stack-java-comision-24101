@@ -8,7 +8,14 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+
+     <!--  https://favicon.io/ -->
+     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+     <link rel="manifest" href="/site.webmanifest">
+
+     <title>NUMEROS</title>
 
      <!-- aqui deben estar los llamados a archivos .css-->
      <link rel="stylesheet" href="../css/estilos.css">
@@ -53,7 +60,7 @@ importados desde la API
           <!-- 3) nav |  -->
 
           <!--  (opcional)INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN (opcional) -->
-          <nav class="navbar navbar-inverse">
+          <nav class="navbar navbar-inverse" id="navbar navbar-inverse">
                <div class="container-fluid">
                     <div class="navbar-header">
                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -73,10 +80,12 @@ importados desde la API
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                          <ul class="nav navbar-nav">
-                              <li><a href="../index.html" class="boton">Home</a></li>
-                              <li><a href="#" class="boton">Secciones</a></li>
-                              <li><a href="#" class="boton">Buscador</a></li>
-                              <li><a href="#" class="boton">Contacto</a></li>
+                              <li><a href="index.html" class="boton">Home</a></li>
+                              <li><a href="http://127.0.0.1:5500/index.html#seccion-3-galeria"
+                                        class="boton">Secciones</a></li>
+                              <li><a href="http://127.0.0.1:5500/index.html#seccion-4-buscador"
+                                        class="boton">Buscador</a></li>
+                              <!---  <li><a href="#" class="boton">Contacto</a></li>  -->
                               <li class="iniciar-sesion" class="boton"><a href="./iniciar_sesion.html">Iniciar
                                         Sesion</a></li>
                          </ul>
@@ -144,20 +153,21 @@ importados desde la API
                     <span class="titan-one-regular span-6">O</span>
                     <span class="titan-one-regular span-7">S</span>
                </div>
-
                <ul class="footer-lista">
                     <li class="footer-lista-enlace"><a href="index.html" class="footer-enlace">Home</a></li>
-                    <li class="footer-lista-enlace"><a href="#" class="footer-enlace">Secciones</a>
+                    <li class="footer-lista-enlace"><a href="http://127.0.0.1:5500/index.html#seccion-3-galeria"
+                              class="footer-enlace">Secciones</a>
                     </li>
-                    <li class="footer-lista-enlace"><a href="#" class="footer-enlace">Buscador</a>
+                    <li class="footer-lista-enlace"><a href="http://127.0.0.1:5500/index.html#seccion-4-buscador"
+                              class="footer-enlace">Buscador</a>
                     </li>
-                    <li class="footer-lista-enlace"><a href="#" class="footer-enlace">Contacto</a>
+                    <!-- <li class="footer-lista-enlace"><a href="#" class="footer-enlace">Contacto</a>  -->
                     </li>
                     <li class="footer-lista-enlace footer-iniciar-sesion"><a href="./html/iniciar_sesion.html"
                               class="footer-enlace">Iniciar
                               Sesion</a></li>
                </ul>
-               <a class="flecha-arriba" href="#main">
+               <a class="flecha-arriba" href="#navbar navbar-inverse">
                     <i class="fa-solid fa-circle-up fa-2xl" style="color: #63E6BE;"></i>
                </a>
                <a href="">Términos y condiciones</a>
