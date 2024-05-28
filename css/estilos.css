@@ -228,10 +228,15 @@ body {
   flex-direction: column;
   text-align: center;
 
+  /* animación */
+  transform: perspective(600px) rotateY(180deg);
+}
+
 /* el enlace del dorso de la card "ver mas..." */
 .etiqueta-enlace a{
   color: white;
 }
+
 
   
   /* animación */
