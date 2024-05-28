@@ -8,7 +8,14 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+
+     <!--  https://favicon.io/ -->
+     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+     <link rel="manifest" href="/site.webmanifest">
+
+     <title>NUMEROS</title>
 
      <!-- aqui deben estar los llamados a archivos .css-->
      <link rel="stylesheet" href="./css/estilos.css">
@@ -40,7 +47,8 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
-  
+
+
 </head>
 
 
@@ -53,7 +61,7 @@
           <!-- 3) nav |  -->
 
           <!--  (opcional)INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN (opcional) -->
-          <nav class="navbar navbar-inverse">
+          <nav class="navbar navbar-inverse" id="navbar navbar-inverse">
                <div class="container-fluid">
                     <div class="navbar-header">
                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -74,9 +82,9 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                          <ul class="nav navbar-nav">
                               <li><a href="index.html" class="boton">Home</a></li>
-                              <li><a href="#" class="boton">Secciones</a></li>
-                              <li><a href="#" class="boton">Buscador</a></li>
-                              <li><a href="#" class="boton">Contacto</a></li>
+                              <li><a href="#seccion-3-galeria" class="boton">Secciones</a></li>
+                              <li><a href="#seccion-4-buscador" class="boton">Buscador</a></li>
+                              <!--  <li><a href="#" class="boton">Contacto</a></li>  -->
                               <li class="iniciar-sesion"><a href="./html/iniciar_sesion.html" class="boton">Iniciar
                                         Sesion</a></li>
                          </ul>
@@ -144,7 +152,7 @@ importados desde la API -->
           </section>
 
           <!-- 7) section 3 | galeria -->
-          <section class="seccion-3-galeria">
+          <section class="seccion-3-galeria" id="seccion-3-galeria">
 
                <h2 class="seccion-titulo">Secciones</h2>
 
@@ -254,7 +262,7 @@ importados desde la API -->
                <!--   -->
           </section>
           <!-- 8) section 4 | buscador e indices de lectura -->
-          <section class="seccion-4-buscador">
+          <section class="seccion-4-buscador" id="seccion-4-buscador">
                <div class="buscador-titulo">
                     <div class="buscador-pregunta">
                          <h2 class="seccion-titulo">Buscador</h2>
@@ -287,7 +295,7 @@ importados desde la API -->
 
           <!-- 9) section 5 | carrusel de img  -->
           <section class="section-carrusel alkalami-regular">
-               <h2>Tu participación completa la historia de esta ciudad</h2> 
+               <h2>Tu participación completa la historia de esta ciudad</h2>
                <div class="carrusel-contenedor">
                     <div class="carrusel-img-descripcion">
                          <img src="./img/puerto_madero.png" alt="">
@@ -326,7 +334,6 @@ importados desde la API -->
      </main>
 
 
-
      <!-- 10) footer | contiene a los visto en 3) nav -->
      <!-- ********************************************************************** -->
      <!--  INICIO DE FOOTER  -->
@@ -347,14 +354,16 @@ importados desde la API -->
 
                <ul class="footer-lista">
                     <li class="footer-lista-enlace"><a href="index.html" class="footer-enlace">Home</a></li>
-                    <li class="footer-lista-enlace"><a href="#" class="footer-enlace">Secciones</a></li>
-                    <li class="footer-lista-enlace"><a href="#" class="footer-enlace">Buscador</a></li>
-                    <li class="footer-lista-enlace"><a href="#" class="footer-enlace">Contacto</a></li>
+                    <li class="footer-lista-enlace"><a href="#seccion-3-galeria" class="footer-enlace">Secciones</a>
+                    </li>
+                    <li class="footer-lista-enlace"><a href="#seccion-4-buscador" class="footer-enlace">Buscador</a>
+                    </li>
+                    <!--  <li class="footer-lista-enlace"><a href="#" class="footer-enlace">Contacto</a></li>-->
                     <li class="footer-lista-enlace footer-iniciar-sesion"><a href="./html/iniciar_sesion.html"
                               class="footer-enlace">Iniciar
                               Sesion</a></li>
                </ul>
-               <a class="flecha-arriba" href="#main">
+               <a class="flecha-arriba" href="#navbar navbar-inverse">
                     <i class="fa-solid fa-circle-up fa-2xl" style="color: #63E6BE;"></i>
                </a>
                <a href="">Términos y condiciones</a>
@@ -365,7 +374,8 @@ importados desde la API -->
      <!-- ********************************************************************** -->
 
      <div class="creditos">
-          <span class="copyright">&copy;copyright Mayo 2024 @</span>
+          <span class="copyright">&copy;copyright ALUMNOS DE CURSO FULL STACK JAVA - CODO A CODO - Mayo 2024 - COMISION
+               24101</span>
      </div>
 
      <!-- 11) script |  -->
