@@ -72,13 +72,13 @@
 
 
           .select-nacionalidad {
-                    height: 30px;
+                    height: 40px;
                     width: 78%;
           }
 
           .btn-registrarse {
                     background-color: #FFA202;
-                    width: 60px;
+                    min-height: 50px;
                     width: 200px;
                     margin: 5px;
                     color: white;
@@ -181,7 +181,7 @@
 
           .btn-registrarse {
                     background-color: #FFA202;
-                    height: 50px;
+                    min-height: 60px;
                     width: 40%;
                     margin: 5px;
                     color: white;
