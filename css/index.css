@@ -250,6 +250,12 @@ transform: translate(-50%, -50%); */
     overflow: hidden;
   }
 
+  /* CARRUSEL DE IMG */
+  .section-carrusel {
+    height: 500px;
+    width: 100%;
+  }
+  
   .producto h2,
   .producto h3 {
     /* h2 y h3 de las tarjetas */
@@ -634,6 +640,12 @@ transform: translate(-50%, -50%); */
     overflow: hidden;
   }
 
+  /* CARRUSEL DE IMG */
+  .section-carrusel {
+    height: 450px;
+    width: 100%;
+  }
+  
   .producto h2,
   .producto h3 {
     /* h2 y h3 de las tarjetas */
@@ -1054,6 +1066,12 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     overflow: hidden;
   }
 
+  /* CARRUSEL DE IMG */
+  .section-carrusel {
+    height: 400px;
+    width: 100%;
+  }
+  
   /* En dispositivos medianos y grandes, las img de las tarjetas
  se ubican en los div producto-x-img */
   /* TARJETAS */
@@ -1460,6 +1478,12 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     overflow: hidden;
   }
 
+  /* CARRUSEL DE IMG */
+  .section-carrusel {
+    height: 400px;
+    width: 100%;
+  }
+  
   /* En dispositivos medianos y grandes, las img de las tarjetas
  se ubican en los div producto-x-img */
   /* TARJETAS */
@@ -1578,8 +1602,8 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 .section-carrusel {
   background-color: #4223b1;
 
-  height: 400px;
-  width: 100%;
+  /* la altura y la anchura esta
+  descrita en cada @media */
 
   margin-top: 70px;
   margin-bottom: 70px;
