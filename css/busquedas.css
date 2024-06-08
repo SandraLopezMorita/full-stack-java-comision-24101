@@ -2,55 +2,9 @@
 /* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
 @media only screen and (max-width: 400px) {
           .section-busquedas {
-                    height: 2300px;
-                    width: 90%;
-                    margin: 35px 5%;
-
-                    display: flex;
-                    /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
-                    flex-direction: column;
-                    /* los hijos mas directos se posicionarán en una columna */
-                    justify-content: space-around;
-                    /* propiedad necesaria para posicionar en fila los hijos mas directos */
-                    align-items: center;
-          }
-
-          /* div contiene al div nosotros-descripcion y al div nosotros-img */
-          .descripcion-busqueda {
-                    height: 600px;
-                    width: 100%;
-                    margin-bottom: 30px;
-
-                    border: 2px #E5E7E9 solid;
-
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: center;
-          }
-
-          .descripcion-busqueda-texto {
-                    height: 300px;
+                    height: auto;
                     width: 95%;
-
-                    padding: 5px 5px;
-                    font-size: 1.5rem;
-                    text-align: justify;
-          }
-
-          .descripcion-busquedas-img {
-                    height: 250px;
-                    width: 100%;
-                    overflow: hidden;
-          }
-}
-
-/* Media query para teléfonos STANDAR móviles SM XS */
-@media only screen and (min-width: 401px) and (max-width: 795px) {
-          .section-busquedas {
-                    height: 1800px;
-                    width: 90%;
-                    margin: 35px 5%;
+                    margin: 35px 2%;
 
                     display: flex;
                     /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
@@ -63,7 +17,7 @@
 
           /* div contiene al div nosotros-descripcion y al div nosotros-img */
           .descripcion-busqueda {
-                    height: 400px;
+                    height: auto;
                     width: 100%;
                     margin-bottom: 50px;
 
@@ -76,27 +30,31 @@
           }
 
           .descripcion-busqueda-texto {
-                    height: 250px;
+                    height: auto;
                     width: 95%;
 
-                    padding: 10px;
+                    padding: 15px 5px;
                     font-size: 1.5rem;
                     text-align: justify;
           }
 
+          .descripcion-busqueda-texto h2 {
+                    margin-bottom: 25px;
+          }
+
           .descripcion-busquedas-img {
-                    height: 250px;
+                    height: 270px;
                     width: 100%;
                     overflow: hidden;
           }
 }
 
-/* Media query para tabletas MD */
-@media only screen and (min-width: 796px) and (max-width:991px) {
+/* Media query para teléfonos STANDAR móviles SM XS */
+@media only screen and (min-width: 401px) and (max-width: 795px) {
           .section-busquedas {
-                    height: 1100px;
-                    width: 90%;
-                    margin: 35px 5%;
+                    height: auto;
+                    width: 95%;
+                    margin: 35px 2%;
 
                     display: flex;
                     /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
@@ -109,7 +67,58 @@
 
           /* div contiene al div nosotros-descripcion y al div nosotros-img */
           .descripcion-busqueda {
-                    height: 200px;
+                    height: auto;
+                    width: 100%;
+                    margin-bottom: 70px;
+
+                    border: 2px #E5E7E9 solid;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+          }
+
+          .descripcion-busqueda-texto {
+                    height: auto;
+                    width: 95%;
+
+                    padding: 15px 10px;
+                    font-size: 1.5rem;
+                    text-align: justify;
+          }
+
+          .descripcion-busqueda-texto h2 {
+                    margin-bottom: 25px;
+          }
+
+
+          .descripcion-busquedas-img {
+                    height: 270px;
+                    width: 100%;
+                    overflow: hidden;
+          }
+}
+
+/* Media query para tabletas MD */
+@media only screen and (min-width: 796px) and (max-width:991px) {
+          .section-busquedas {
+                    height: 1850px;
+                    width: 95%;
+                    margin: 35px 2%;
+
+                    display: flex;
+                    /* propiedad necesaria parar ordenar en una columna a los hijos mas directos */
+                    flex-direction: column;
+                    /* los hijos mas directos se posicionarán en una columna */
+                    justify-content: space-around;
+                    /* propiedad necesaria para posicionar en fila los hijos mas directos */
+                    align-items: center;
+          }
+
+          /* div contiene al div nosotros-descripcion y al div nosotros-img */
+          .descripcion-busqueda {
+                    height: auto;
                     width: 95%;
                     margin-bottom: 30px;
 
@@ -122,14 +131,19 @@
           }
 
           .descripcion-busqueda-texto {
-                    height: 200px;
+                    height: auto;
                     width: 60%;
 
-                    padding: 20px;
+                    padding: 15px 20px;
+                    text-align: justify;
+          }
+
+          .descripcion-busqueda-texto h2 {
+                    margin-bottom: 25px;
           }
 
           .descripcion-busquedas-img {
-                    height: 250px;
+                    height: 110%;
                     width: 40%;
                     overflow: hidden;
           }
@@ -139,7 +153,7 @@
 @media only screen and (min-width: 992px) {
 
           .section-busquedas {
-                    height: 1100px;
+                    height: 1700px;
                     width: 90%;
                     margin: 35px 5%;
 
@@ -154,10 +168,10 @@
 
           /* div contiene al div nosotros-descripcion y al div nosotros-img */
           .descripcion-busqueda {
-                    height: 200px;
+                    height: auto;
                     width: 90%;
                     margin-left: 5%;
-                    margin-bottom: 30px;
+                    margin-bottom: 100px;
 
                     border: 2px #E5E7E9 solid;
 
@@ -168,14 +182,21 @@
           }
 
           .descripcion-busqueda-texto {
-                    height: 200px;
-                    width: 60%;
+                    height: auto;
+                    width: 55%; 
+                    margin-left: 2%;
+                    margin-right: 2%;
+                    
+                    padding: 10px 15px;
+                    text-align: justify;
+          }
 
-                    padding: 20px;
+          .descripcion-busqueda-texto h2 {
+                    margin-bottom: 25px;
           }
 
           .descripcion-busquedas-img {
-                    height: 250px;
+                    height: 110%;
                     width: 40%;
                     overflow: hidden;
           }
@@ -194,6 +215,7 @@
 
 /* nosotros */
 .nosotros-img {
+          background-color: white;
           background-image: url(../img/nosotros1.jpg);
           /* Creas el borde */
           border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
@@ -201,6 +223,7 @@
 
 /* Tu aporte a la comunidad */
 .aporte-img {
+          background-color: white;
           background-image: url(../img/aporte-comunidad1.jpg);
           /* Creas el borde */
           border-image: linear-gradient(to bottom, #16A630 0%, #A6168C 100%) 1;
@@ -208,6 +231,7 @@
 
 /* ¿Qué son los exploradores? */
 .exploradores-img {
+          background-color: white;
           background-image: url(../img/exploradores1.jpg);
           border: 10px solid transparent;
           /* Creas el borde */
@@ -216,9 +240,10 @@
 
 /* ¿Por qué es importante mantener activos a tus exploradores? */
 .activar-img {
+          background-color: white;
           background-image: url(../img/activar-exploradores1.jpg);
           /* Creas el borde */
           border-image: linear-gradient(to bottom, #1616A6 0%, #A6A616 100%) 1;
 }
 
-/************/ 
+/************/
