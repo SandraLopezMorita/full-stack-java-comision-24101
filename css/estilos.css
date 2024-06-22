@@ -218,7 +218,7 @@ body {
   background-color: #F9F6F6;
   box-shadow: 10px 8px 10px rgb(97, 161, 200);
   border: 2px rgb(97, 161, 200) solid;
-  border-radius: 20px;
+  border-radius: 11px;
   padding: 5px !important;
   /* animación */
   transform: perspective(600px) rotateY(0deg);
@@ -231,7 +231,7 @@ body {
 .card-frente-texto h2 {
   color: rgb(97, 161, 200);
   text-shadow: 2px 2px 2px #fcfdfd;
-  font-size: 55px;
+  font-size: 45px;
   text-align: center;
 }
 
@@ -240,7 +240,7 @@ body {
   box-shadow: 10px 8px 10px white;
   border: 2px #D0D5D5 solid;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 11px;
 
   position: absolute;
   color: rgb(43, 44, 46);
@@ -254,7 +254,7 @@ body {
 }
 
 .card-dorso h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -274,9 +274,9 @@ body {
 }
 
 .editar-card {
-  height: 16px;
-  width: 80%;
-  margin-left: 10%;
+  height: 18px;
+  width: 95%;
+  margin-left: 2.5%;
   font-size: 12px;
 
   display: flex;
@@ -432,5 +432,5 @@ footer {
   right: 5vw;
   /*  */
   position: fixed;
-}
 
+}
