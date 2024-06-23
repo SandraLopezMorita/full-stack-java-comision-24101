@@ -171,12 +171,12 @@ el texto aparecerá justificado */
   .seccion-3-galeria {
     /* Contiene el titulo y la galeria de productos */
 
-    /* debe contener los 1680px de la galeria
+    /* debe contener los 1800px de la galeria
     sumarle los 50px del titulo
     sumarle los 35px de top
     sumarle los 40px de boottom
-    total = 1625px */
-    min-height: 1805px;
+    total = 1925px */
+    min-height: 1925px;
     width: 100%;
     margin-top: 60px;
   }
@@ -185,10 +185,10 @@ el texto aparecerá justificado */
     /* Contiene las 6 tarjetas giratorias 
 y por eso, esta classe debe estar en las @medias querys*/
 
-    /* son 6 card * 230px = 1380px
+    /* son 6 card * 250px = 1500px
     sumarle 50px*6=300px de bottom
-    total de 1680px */
-    min-height: 1680px;
+    total de 1800px */
+    min-height: 1800px;
     width: 100%;
     margin-bottom: 30px;
     /* centrar a los elemento hijos */
@@ -204,7 +204,7 @@ y por eso, esta classe debe estar en las @medias querys*/
 
   .producto {
     /* Contiene la card-frente y card-dorso */
-    min-height: 230px;
+    min-height: 250px;
     width: 95%;
     margin: 50px 2.5%;
     /* centrar a los elemento hijos */
@@ -223,7 +223,7 @@ transform: translate(-50%, -50%); */
   .card {
     /* class de card-frente y card-dorso  */
     position: absolute;
-    min-height: 230px;
+    min-height: 250px;
     /* ancho proporcional a su elemento padre */
     width: 90%;
 
