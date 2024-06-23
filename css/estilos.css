@@ -247,6 +247,7 @@ body {
   padding-top: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: center;
 
   /* animación */
@@ -283,6 +284,37 @@ body {
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+}
+
+.transaccion {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  opacity: 0.4;
+}
+
+.nro-transaccion-transporte {
+  color: #cb6d51;
+}
+
+.nro-transaccion-salud {
+  color: #85C1E9;
+}
+
+.nro-transaccion-educacion {
+  color: #5D6D7E;
+}
+
+.nro-transaccion-seguridad {
+  color: #BB8FCE;
+}
+
+.nro-transaccion-comunidad {
+  color: #45B39D;
+}
+
+.nro-transaccion-redes {
+  color: #3498DB;
 }
 
 .etiqueta-enlace:hover a {
@@ -432,5 +464,6 @@ footer {
   right: 5vw;
   /*  */
   position: fixed;
-}
 
+
+}
