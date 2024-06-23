@@ -5,7 +5,7 @@
 
 
 /* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 440px) {
 
   /* INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
   .navbar-header {
@@ -120,17 +120,10 @@ el texto aparecerá justificado */
     color: rgb(70, 103, 211);
     height: auto;
     width: 90% !important;
-
     padding: 10px 20px;
-
     font-size: 1.8rem;
     border: 2px blueviolet double;
     border-radius: 20px;
-    /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
-    /*  box-shadow: inset 0px 0px 20px blueviolet, */
-    /* difuminado interno */
-    /*  0px 0px 20px blueviolet; */
-    /* difuminado externo */
 
     /* en dispositivos pequeños, este div
 debe acomodar sus elementos en una columna */
@@ -150,10 +143,8 @@ el texto aparecerá justificado */
     color: white;
     height: auto;
     width: 160px;
-
     font-size: 2rem;
     border-radius: 6px;
-
     text-align: center;
     /* quitar decoracion al enlace */
     text-decoration: none;
@@ -164,16 +155,13 @@ el texto aparecerá justificado */
     color: white;
     height: auto;
     width: 180px;
-
     font-size: 2rem;
     border: 2px white double;
     border-radius: 6px;
-
     text-align: center;
     /* quitar decoracion al enlace */
     text-decoration: none;
   }
-
 
   /* ******* fin index.html seccion-2 presentacion *************** */
 
@@ -183,12 +171,12 @@ el texto aparecerá justificado */
   .seccion-3-galeria {
     /* Contiene el titulo y la galeria de productos */
 
-    /* debe contener los 1500px de la galeria
+    /* debe contener los 1680px de la galeria
     sumarle los 50px del titulo
     sumarle los 35px de top
     sumarle los 40px de boottom
     total = 1625px */
-    min-height: 1625px;
+    min-height: 1805px;
     width: 100%;
     margin-top: 60px;
   }
@@ -197,13 +185,12 @@ el texto aparecerá justificado */
     /* Contiene las 6 tarjetas giratorias 
 y por eso, esta classe debe estar en las @medias querys*/
 
-    /* son 6 card * 200px = 1200px
+    /* son 6 card * 230px = 1380px
     sumarle 50px*6=300px de bottom
-    total de 1500px */
-    min-height: 1500px;
-    width: 90%;
+    total de 1680px */
+    min-height: 1680px;
+    width: 100%;
     margin-bottom: 30px;
-    margin-left: 4%;
     /* centrar a los elemento hijos */
     display: block;
     /* Convertimos al contenedor en flexbox */
@@ -217,9 +204,9 @@ y por eso, esta classe debe estar en las @medias querys*/
 
   .producto {
     /* Contiene la card-frente y card-dorso */
-    min-height: 200px;
-    width: 80%;
-    margin: 50px 7%;
+    min-height: 230px;
+    width: 95%;
+    margin: 50px 2.5%;
     /* centrar a los elemento hijos */
     display: flex;
     /* Convertimos al contenedor en flexbox */
@@ -236,9 +223,9 @@ transform: translate(-50%, -50%); */
   .card {
     /* class de card-frente y card-dorso  */
     position: absolute;
-    min-height: 200px;
+    min-height: 230px;
     /* ancho proporcional a su elemento padre */
-    width: 80%;
+    width: 90%;
 
     /* animación */
     /* no permitir elegir si el usuario debe ver la cara posterior */
@@ -368,15 +355,13 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
   }
 
   /* ******* fin index.html seccion-4 buscador *************** */
-
-
 }
 
 
 
 
 /* Media query para teléfonos STANDAR móviles SM XS */
-@media only screen and (min-width: 401px) and (max-width: 767px) {
+@media only screen and (min-width: 441px) and (max-width: 707px) {
 
   /* INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
   .navbar-header {
@@ -463,18 +448,10 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     background-color: white;
     height: auto;
     width: 90% !important;
-
     padding: 10px 20px;
-
     font-size: 1.8rem;
     border: 2px #2954df double;
     border-radius: 20px;
-    /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
-    /* box-shadow: inset 0px 0px 20px #2954df,*/
-    /* difuminado interno */
-    /*  0px 0px 20px #2954df; */
-    /* difuminado externo */
-
     /* en dispositivos pequeños, este div
 debe acomodar sus elementos en una columna */
     display: flex;
@@ -493,9 +470,7 @@ el texto aparecerá justificado */
     color: rgb(70, 103, 211);
     height: auto;
     width: 90% !important;
-
     padding: 10px 20px;
-
     font-size: 1.8rem;
     border: 2px blueviolet double;
     border-radius: 20px;
@@ -523,10 +498,8 @@ el texto aparecerá justificado */
     color: white;
     height: auto;
     width: 160px;
-
     font-size: 2rem;
     border-radius: 6px;
-
     text-align: center;
     /* quitar decoracion al enlace */
     text-decoration: none;
@@ -537,11 +510,9 @@ el texto aparecerá justificado */
     color: white;
     height: auto;
     width: 180px;
-
     font-size: 2rem;
     border: 2px white double;
     border-radius: 6px;
-
     text-align: center;
     /* quitar decoracion al enlace */
     text-decoration: none;
@@ -560,7 +531,6 @@ el texto aparecerá justificado */
     total = 1925px */
     height: 1925px;
     margin-top: 50px;
-
   }
 
   .galeria-productos {
@@ -609,13 +579,11 @@ transform: translate(-50%, -50%); */
     min-height: 250px;
     /* ancho proporcional a su elemento padre */
     width: 80%;
-
     /* animación */
     /* no permitir elegir si el usuario debe ver la cara posterior */
     backface-visibility: hidden;
     /* controlar la velocidad de la animación al cambiar las propiedades de CSS */
     transition: 1s;
-
     /* ocultar todo lo que este fuera del div */
     overflow: hidden;
   }
@@ -752,13 +720,12 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
 
 
 /* Media query para tabletas MD */
-@media only screen and (min-width: 768px) and (max-width:991px) {
+@media only screen and (min-width: 708px) and (max-width:991px) {
   .seccion-titulo {
     /* son los titulos de las seccionnes ("Secciones", "Buscador")
                     esto va en la @media query*/
     font-size: 28px;
   }
-
 
   /* INICIO CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN  */
   /* ******* inicio 3) nav | CÓDIGO BOOTSTRAP BARRA DE NAVEGACIÓN *************** */
@@ -874,25 +841,15 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     background-color: white;
     height: 75px;
     width: 90% !important;
-
     padding-left: 25px;
     padding-right: 25px;
-
     font-size: 2rem;
     border: 2px #2954df double;
     border-radius: 20px;
-    /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
-    /* box-shadow: inset 0px 0px 20px #2954df,*/
-    /* difuminado interno */
-    /*  0px 0px 20px #2954df; */
-    /* difuminado externo */
-
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     /* en dispositivos mediano y grandes, 
     el texto de este div, aparecerá alineado al margen izquierdo */
     text-align: left;
@@ -905,24 +862,15 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     color: rgb(70, 103, 211);
     height: 75px;
     width: 90% !important;
-
     padding-left: 25px;
     padding-right: 25px;
-
     font-size: 2rem;
     border: 2px blueviolet double;
     border-radius: 20px;
-    /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
-    /*  box-shadow: inset 0px 0px 20px blueviolet, */
-    /* difuminado interno */
-    /*  0px 0px 20px blueviolet; */
-    /* difuminado externo */
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     /* en dispositivos mediano y grandes, 
     el texto de este div, aparecerá alineado al margen izquierdo */
     text-align: left;
@@ -934,10 +882,8 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     color: white;
     height: auto;
     width: 160px;
-
     font-size: 2rem;
     border-radius: 6px;
-
     text-align: center;
     /* quitar decoracion al enlace */
     text-decoration: none;
@@ -948,11 +894,9 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     color: white;
     height: auto;
     width: 180px;
-
     font-size: 2rem;
     border: 2px white double;
     border-radius: 6px;
-
     text-align: center;
     /* quitar decoracion al enlace */
     text-decoration: none;
@@ -966,43 +910,41 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
   .seccion-3-galeria {
     /* Contiene el titulo y la galeria de productos */
 
-
-    /* debe contener los 2460px de la galeria
+    /* debe contener los 1140px de la galeria
     sumarle los 50px del titulo
     sumarle los 50px de top de la galeria
     sumarle los 40px de boottom de la galeria
-    total = 1625px */
+    total = 1180px */
     padding-top: 40px;
-    height: 2600px;
+    height: 1340px;
   }
 
   .galeria-productos {
     /* Contiene las 6 tarjetas giratorias 
+    ubicadas de a par
           y por eso, esta classe debe estar en las @medias querys*/
 
-    /* son 6 card * 350px = 2100px
-    sumarle 60px*6=360px de bottom
-    total de 2500px */
-    min-height: 2460px;
-    width: 70%;
-    margin-left: 15%;
+    /* son 3  card * 360px = 1440px*/
+    height: 1140px;
+    width: 100%;
     margin-top: 50px;
     /* centrar a los elemento hijos */
-    display: block;
-    /* Convertimos al contenedor en flexbox */
-    flex-direction: column;
-    /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda */
-    justify-content: space-between;
+    display: flex;
+    /* Convertimos al contenedor en flexbox 
+    flex-direction: column;*/
+    /* Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda 
+    justify-content: space-between;*/
     /* Con esto le indicamos que si llega al margen del contenedor que se posicione abajo del otro item 
                     flex-wrap: wrap;*/
     align-items: center;
+    flex-wrap: wrap;
+    /*Con esto le indicamos que si llega al margen del contenedor que se posicione abajo del otro item*/
   }
 
   .producto {
     /* Contiene la card-frente y card-dorso */
-    height: 350px;
-    width: 100%;
-    margin-bottom: 60px;
+    height: 380px;
+    width: 50%;
     /* centrar a los elemento hijos */
     display: flex;
     /* Convertimos al contenedor en flexbox */
@@ -1019,9 +961,9 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
   .card {
     /* class de card-frente y card-dorso  */
     position: absolute;
-    height: 350px;
+    height: 320px;
     /* ancho proporcional a su elemento padre */
-    width: 70%;
+    width: 45%;
 
     /* animación */
     /* no permitir elegir si el usuario debe ver la cara posterior */
@@ -1108,7 +1050,7 @@ h2 "Si no encontraste lo que buscabas. Prueba aqui"
     /*  */
     background-color: #F8E7DB;
     width: 90%;
-    margin-left: 5%;
+    margin-left: 1%;
     padding-bottom: 20px;
     /* centrar a los elementos hijos */
     display: flex;
