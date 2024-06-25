@@ -3,7 +3,6 @@
 /* a modo práctico, cada @media tiene reescritas cada página */
 
 
-
 /* Media query para teléfonos MUY PEQUEÑOS móviles SM XS */
 @media only screen and (max-width: 440px) {
 
@@ -45,7 +44,7 @@
 
 
   /* ******* inicio index.html seccion-2 presentacion *************** */
-  .seccion-2-presentacion {
+  .seccion-2-presentacion { 
     min-height: 500px;
     width: 92%;
 
